@@ -27,19 +27,19 @@
 
         <ul class="list-unstyled components">
             <li class="active">
-                <a href="#">
+                <a href="index.html">
                     <span class="icon-dashboard sidebar-icon align-middle"></span>
                     <span class="ps-4">Dashboard</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="information.html">
                     <span class="icon-information sidebar-icon align-middle"></span>
                     <span class="ps-4">Information</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="referral-links.html">
                     <span class="icon-links sidebar-icon align-middle"></span>
                     <span class="ps-4">Referral Links</span>
                 </a>
@@ -53,7 +53,9 @@
             <li>
                 <a href="#">
                     <span class="icon-transaction sidebar-icon align-middle"></span>
-                    <span class="ps-4">Transactions</span>
+                    <span class="ps-4">Transactions
+                        <span class="badge bg-danger text-white rounded-circle ms-2">1</span>
+                    </span>
                 </a>
             </li>
             <li>
@@ -89,12 +91,80 @@
 
     <!-- Page Content -->
     <div id="content">
-        <nav class="navbar navbar-expand-lg navbar-light py-5">
+        <nav class="navbar navbar-expand-lg navbar-light pt-97px pb-34px">
+            <div class="container">
+                <h1>Good Morning Yavuz,
+                    <span class="font-weight-400 font-size-16 text-white d-block">Here is what’s happening lately</span>
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item align-self-center me-2 dropdown dropstart">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                <div class="notifications-style">
+                                    <img src="images/notification-icon.svg" style="transform: rotate(18.04deg)">
+                                    <span class="badge position-absolute bg-danger text-white rounded-circle ms-2" style="top: 0; left: -10px;">1</span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu" style="min-width: 342px;">
+                                <li class="dropdown-item d-flex justify-content-between px-3 border-bottom">
+                                    <div class="font-size-14">Notification 1</div>
+                                    <div class="font-size-14">
+                                        <span>7d</span>
+                                        <span class="icon-delete ps-4"></span>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item d-flex justify-content-between px-3 border-bottom">
+                                    <div class="font-size-14">Notification 1</div>
+                                    <div class="font-size-14">
+                                        <span>7d</span>
+                                        <span class="icon-delete ps-4"></span>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item d-flex justify-content-between px-3 border-bottom">
+                                    <div class="font-size-14">Notification 1</div>
+                                    <div class="font-size-14">
+                                        <span>7d</span>
+                                        <span class="icon-delete ps-4"></span>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item d-flex justify-content-between px-3 border-bottom">
+                                    <div class="font-size-14">Notification 1</div>
+                                    <div class="font-size-14">
+                                        <span>7d</span>
+                                        <span class="icon-delete ps-4"></span>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item d-flex justify-content-between px-3 border-bottom">
+                                    <div class="font-size-14">Notification 1</div>
+                                    <div class="font-size-14">
+                                        <span>7d</span>
+                                        <span class="icon-delete ps-4"></span>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item d-flex justify-content-between px-3 border-bottom">
+                                    <div class="font-size-14">Notification 1</div>
+                                    <div class="font-size-14">
+                                        <span>7d</span>
+                                        <span class="icon-delete ps-4"></span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item">
+                            <img class="user-img" src="images/user.svg" alt="user">
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 mb-4">
-                    <div class="bg-light border-radius-20px p-3">
+                    <div class="bg-light border-radius-20px p-3 h-100">
                         <h2>My Status
                             <span class="font-weight-400 font-size-16 text-purple">May 2021</span>
                         </h2>
@@ -123,13 +193,13 @@
                     </div>
                 </div>
                 <div class="col-lg-3 mb-4">
-                    <div class="bg-light border-radius-20px p-3">
+                    <div class="bg-light border-radius-20px p-3 h-100">
                         <h2>My Earnings
                             <span class="font-weight-400 font-size-16 text-purple">2021</span>
                         </h2>
 
                         <div class="row mt-4">
-                            <div class="col-lg-10">
+                            <div class="col-lg-10 col-10">
                                 <div class="border-radius-10px border-2 p-1">
                                     <div class="font-weight-500 text-muted font-size-18">Total Earning</div>
                                     <div class="font-weight-500 text-violet font-size-30">69,420 $</div>
@@ -139,8 +209,8 @@
                                     <div class="font-weight-500 text-violet font-size-30">2,230 $</div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 m-auto ps-0">
-                                <div class="circle-img mx-lg-0 mx-auto ">
+                            <div class="col-lg-2 col-2 m-auto ps-0">
+                                <div class="arrow-next mx-lg-0 mx-auto ">
                                     <span class="icon-arrow-right2 arrow-style"></span>
                                 </div>
                             </div>
@@ -148,10 +218,10 @@
                     </div>
                 </div>
                 <div class="col-lg-6 mb-4">
-                    <div class="bg-light border-radius-20px p-3">
+                    <div class="bg-light border-radius-20px p-3 h-100">
                         <h2>Transaction History</h2>
                         <div class="row">
-                            <div class="col-lg-11">
+                            <div class="col-lg-11 col-11">
                                 <table class="table">
                                     <tbody>
                                         <tr>
@@ -187,8 +257,8 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="col-lg-1 m-auto ps-0">
-                                <div class="circle-img mx-lg-0 mx-auto ">
+                            <div class="col-lg-1 col-1 m-auto ps-0">
+                                <div class="arrow-next mx-lg-0 mx-auto ">
                                     <span class="icon-arrow-right2 arrow-style"></span>
                                 </div>
                             </div>
@@ -196,14 +266,14 @@
 
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="bg-light border-radius-20px p-3">
+                <div class="col-lg-3 mb-4">
+                    <div class="bg-light border-radius-20px p-3 h-100">
                         <h2>Analytics
                             <span class="font-weight-400 font-size-16 text-purple">Last 30 days</span>
                         </h2>
 
                         <div class="row mt-4">
-                            <div class="col-lg-10">
+                            <div class="col-lg-10 col-10 col-10">
                                 <div class="border-radius-10px border-2 p-1">
                                     <div class="font-weight-500 text-muted font-size-18">Total Clicks</div>
                                     <div class="font-weight-500 text-violet font-size-30">10,314</div>
@@ -213,16 +283,16 @@
                                     <div class="font-weight-500 text-violet font-size-30">214</div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 m-auto ps-0">
-                                <div class="circle-img mx-lg-0 mx-auto ">
+                            <div class="col-lg-2 col-2 m-auto ps-0">
+                                <div class="arrow-next mx-lg-0 mx-auto ">
                                     <span class="icon-arrow-right2 arrow-style"></span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="bg-light border-radius-20px p-3">
+                <div class="col-lg-3 mb-4">
+                    <div class="bg-light border-radius-20px p-3 h-100">
                         <h2>News & Updates</h2>
 
                         <ul class="list-group">
@@ -233,7 +303,7 @@
 
                                     <button type="button" class="btn p-0" data-bs-toggle="dropdown" aria-expanded="false">
                                         <span class="icon-dropdown-icon dropdown-icon-active ps-1"></span>
-                                      </button>
+                                    </button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Edit</a></li>
                                         <li><a class="dropdown-item" href="#">Delete</a></li>
@@ -316,9 +386,8 @@
 
 <script src="//code.jquery.com/jquery-1.12.4.js"></script>
 <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="js/bootstrap.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/scripts.js"></script>
 
 </html>

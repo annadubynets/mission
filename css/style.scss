@@ -66,11 +66,15 @@ a[data-toggle="collapse"] {
 }
 
 .dropdown-toggle::after {
-    display: block;
+    display: none;
     position: absolute;
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
+}
+
+.dropstart .dropdown-toggle-split::before {
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -234,6 +238,22 @@ a[aria-expanded="true"] {
     }
 }
 
+.btn-success {
+    background-color: $green-color!important;
+    color: $white-color;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    padding: 5px 52px;
+    min-width: 165px;
+    &:hover {
+        box-shadow: 0px 3px 12px $green-color;
+    }
+}
+
 .btn {
     &:focus {
         box-shadow: none;
@@ -258,6 +278,16 @@ a[aria-expanded="true"] {
 
 .border-2 {
     border: 2px solid $light-gray-color;
+}
+
+.border-3 {
+    border: 1px solid $gains-boro-color;
+    border-width: 1px!important;
+}
+
+.border-4 {
+    border: 2px solid #E3E4FF;
+    border-width: 2px!important;
 }
 
 .progress-bar {
@@ -294,6 +324,7 @@ table td {
         font-weight: 400;
         font-size: $font-size-16;
         color: $indigo-color;
+        cursor: pointer;
         &:hover {
             color: $white-color;
             background: $blue-violet-color;
@@ -301,7 +332,7 @@ table td {
     }
 }
 
-.circle-img {
+.arrow-next {
     background: #FFFFFF;
     box-shadow: -2px 5px 32px rgba(7, 7, 7, 0.15);
     border-radius: 12px;
@@ -310,8 +341,154 @@ table td {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .arrow-style::before {
     color: $blue-violet-color;
+}
+
+.badge {
+    font-weight: 400;
+    font-size: $font-size-12;
+}
+
+.user-img {
+    width: 70px;
+    height: 70px;
+}
+
+.notifications-style {
+    background-color: #F5F6FC;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+}
+
+.dropdown-menu .dropdown-item:hover .icon-delete::before {
+    color: $white-color!important;
+}
+
+.navbar-light .navbar-toggler {
+    border: none!important;
+    color: transparent;
+}
+
+.form-label {
+    color: $gray-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+.form-control {
+    border: 1px solid $gains-boro-color;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+.form-control::placeholder {
+    color: $gains-boro-color;
+    opacity: 1;
+}
+
+
+/*   Custom select  */
+
+.icon_select_mate {
+    position: absolute;
+    top: 20px;
+    right: 2%;
+    font-size: 16px;
+    height: 22px;
+    transition: all 275ms;
+}
+
+.custom-select {
+    position: relative;
+    float: left;
+    min-width: 300px;
+    width: 300px;
+    min-height: 40px;
+    color: $indigo-color;
+    font-weight: 400;
+    background: #F5F6FC;
+    border: 1px solid $gains-boro-color;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: all 375ms ease-in-out;
+    select {
+        position: absolute;
+        overflow: hidden;
+        height: 0px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+.cont_list_select_mate {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.cont_select_int {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    overflow: hidden;
+    height: 0px;
+    width: 100%;
+    background: #F5F6FC;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: transparent;
+    border-bottom: 1px solid $gains-boro-color;
+    border-left: 1px solid $gains-boro-color;
+    border-right: 1px solid $gains-boro-color;
+    transition: all 375ms ease-in-out;
+    li {
+        position: relative;
+        float: left;
+        width: 100%;
+        border: none;
+        background: #F5F6FC;
+        list-style-type: none;
+        padding: 10px 2%;
+        margin: 0px;
+        transition: all 275ms ease-in-out;
+        display: block;
+        cursor: pointer;
+        &:last-child {
+            border-radius: 3px;
+            border-bottom: 0px;
+        }
+        &:hover {
+            background-color: $green-color;
+            color: $white-color;
+        }
+    }
+    .active {
+        background-color: $green-color;
+        color: $white-color;
+    }
+}
+
+.selecionado_opcion {
+    padding: 20px 2%;
+    width: 96%;
+    display: block;
+    margin: 0px;
+    cursor: pointer;
 }
