@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Medium.eot');
+    src: url('../fonts/Rubik-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Rubik-Medium.woff2') format('woff2'), url('../fonts/Rubik-Medium.woff') format('woff'), url('../fonts/Rubik-Medium.ttf') format('truetype'), url('../fonts/Rubik-Medium.svg#Rubik-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Bold.eot');
+    src: url('../fonts/Rubik-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Rubik-Bold.woff2') format('woff2'), url('../fonts/Rubik-Bold.woff') format('woff'), url('../fonts/Rubik-Bold.ttf') format('truetype'), url('../fonts/Rubik-Bold.svg#Rubik-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Regular.eot');
+    src: url('../fonts/Rubik-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Rubik-Regular.woff2') format('woff2'), url('../fonts/Rubik-Regular.woff') format('woff'), url('../fonts/Rubik-Regular.ttf') format('truetype'), url('../fonts/Rubik-Regular.svg#Rubik-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-LightItalic.eot');
+    src: url('../fonts/Rubik-LightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Rubik-LightItalic.woff2') format('woff2'), url('../fonts/Rubik-LightItalic.woff') format('woff'), url('../fonts/Rubik-LightItalic.ttf') format('truetype'), url('../fonts/Rubik-LightItalic.svg#Rubik-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?kjyc14');
+    src: url('../fonts/icomoon.eot?kjyc14#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?kjyc14') format('truetype'), url('../fonts/icomoon.woff?kjyc14') format('woff'), url('../fonts/icomoon.svg?kjyc14#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dropdown-icon:before {
+    content: "\e909";
+    color: #ACACC8;
+}
+
+.icon-widgets:before {
+    content: "\e900";
+    color: #fff;
+}
+
+.icon-user:before {
+    content: "\e901";
+    color: #fff;
+}
+
+.icon-transaction:before {
+    content: "\e902";
+    color: #fff;
+}
+
+.icon-links:before {
+    content: "\e903";
+    color: #fff;
+}
+
+.icon-materials:before {
+    content: "\e904";
+    color: #fff;
+}
+
+.icon-dashboard:before {
+    content: "\e905";
+    color: #fff;
+}
+
+.icon-earnings:before {
+    content: "\e906";
+    color: #fff;
+}
+
+.icon-information:before {
+    content: "\e907";
+    color: #fff;
+}
+
+.icon-analytics:before {
+    content: "\e908";
+    color: #fff;
+}
+
+.icon-arrow-right2:before {
+    content: "\ea3c";
+}
