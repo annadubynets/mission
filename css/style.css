@@ -90,7 +90,10 @@
 
 body {
   font-family: "Rubik", sans-serif;
-  background-color: #1A205A;
+  background-image: url("../images/mission_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 * {
