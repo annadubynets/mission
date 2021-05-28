@@ -52,13 +52,50 @@ h2 {
 }
 
 #sidebar.active {
-    margin-left: -350px;
+    min-width: auto;
+    max-width: auto;
+    width: auto;
+    transition: all 1s;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+#sidebar.active .expanded-view-only {
+    display: none;
+}
+
+#sidebar.active .list-unstyled {
+    margin-top: 125px;
+}
+
+#sidebar.active .toggle-button {
+    right: auto;
 }
 
 #sidebar .sidebar-header {
     padding: 36px 45px 0px;
     background: $white-smoke-color;
     border-top-right-radius: 20px;
+}
+
+.navbar-wrapper {
+    padding-top: 97px;
+    padding-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+    .navbar-wrapper {
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
 a[data-toggle="collapse"] {
@@ -75,15 +112,6 @@ a[data-toggle="collapse"] {
 
 .dropstart .dropdown-toggle-split::before {
     display: none;
-}
-
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -350px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
 }
 
 #sidebar ul.components {
@@ -114,6 +142,11 @@ a[aria-expanded="true"] {
     background: $indigo-color;
     color: $white-color;
     border-radius: 15px;
+}
+
+.dropdown-item .sidebar-icon::before {
+    color: $indigo-color;
+    font-size: 20px;
 }
 
 #sidebar .sidebar-icon::before {
@@ -328,6 +361,9 @@ table td {
         &:hover {
             color: $white-color;
             background: $blue-violet-color;
+            .sidebar-icon:before {
+                color: $white-color;
+            }
         }
     }
 }
@@ -383,9 +419,11 @@ table td {
 }
 
 .form-control {
+    background: $white-smoke-color;
     border: 1px solid $gains-boro-color;
     box-sizing: border-box;
     border-radius: 10px;
+    padding: 7px;
 }
 
 textarea.form-control {
@@ -402,8 +440,8 @@ textarea.form-control {
 
 .icon_select_mate {
     position: absolute;
-    top: 20px;
-    right: 2%;
+    top: 8px;
+    right: 16px;
     font-size: 16px;
     height: 22px;
     transition: all 275ms;
@@ -486,7 +524,7 @@ textarea.form-control {
 }
 
 .selecionado_opcion {
-    padding: 20px 2%;
+    padding: 8px 16px;
     width: 96%;
     display: block;
     margin: 0px;

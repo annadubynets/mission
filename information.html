@@ -11,7 +11,6 @@
 </head>
 
 <div class="wrapper">
-
     <!-- Sidebar -->
     <nav id="sidebar">
 
@@ -19,7 +18,7 @@
             <div class="animated-icon"><span></span><span></span><span></span></div>
         </button>
 
-        <div class="sidebar-header">
+        <div class="sidebar-header expanded-view-only">
             <a class="navbar-brand" href="#">
                 <img src="images/logo.svg" alt="logo" class="d-inline-block align-text-top">
             </a>
@@ -29,31 +28,31 @@
             <li>
                 <a href="index.html">
                     <span class="icon-dashboard sidebar-icon align-middle"></span>
-                    <span class="ps-4">Dashboard</span>
+                    <span class="ps-4 expanded-view-only">Dashboard</span>
                 </a>
             </li>
             <li class="active">
                 <a href="information.html">
                     <span class="icon-information sidebar-icon align-middle"></span>
-                    <span class="ps-4">Information</span>
+                    <span class="ps-4 expanded-view-only">Information</span>
                 </a>
             </li>
             <li>
                 <a href="referral-links.html">
                     <span class="icon-links sidebar-icon align-middle"></span>
-                    <span class="ps-4">Referral Links</span>
+                    <span class="ps-4 expanded-view-only">Referral Links</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <span class="icon-widgets sidebar-icon align-middle"></span>
-                    <span class="ps-4">Widgets</span>
+                    <span class="ps-4 expanded-view-only">Widgets</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <span class="icon-transaction sidebar-icon align-middle"></span>
-                    <span class="ps-4">Transactions
+                    <span class="ps-4 expanded-view-only">Transactions
                         <span class="badge bg-danger text-white rounded-circle ms-2">1</span>
                     </span>
                 </a>
@@ -61,51 +60,108 @@
             <li>
                 <a href="#">
                     <span class="icon-user sidebar-icon align-middle"></span>
-                    <span class="ps-4">My Subscribers</span>
+                    <span class="ps-4 expanded-view-only">My Subscribers</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <span class="icon-earnings sidebar-icon align-middle"></span>
-                    <span class="ps-4">My Earnings</span>
+                    <span class="ps-4 expanded-view-only">My Earnings</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <span class="icon-materials sidebar-icon align-middle"></span>
-                    <span class="ps-4">Useful Materials</span>
+                    <span class="ps-4 expanded-view-only">Useful Materials</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <span class="icon-analytics sidebar-icon align-middle"></span>
-                    <spaan class="ps-4">Analytics</spaan>
+                    <spaan class="ps-4 expanded-view-only">Analytics</spaan>
                 </a>
             </li>
         </ul>
 
-        <div class="text-center m-5">
+        <div class="text-center m-5 expanded-view-only">
             <a href="#" class="btn btn-primary">Log Out</a>
         </div>
     </nav>
 
     <!-- Page Content -->
     <div id="content">
-        <nav class="navbar navbar-expand-lg navbar-light pt-97px pb-34px">
-            <div class="container">
-                <h1>Informartion
-                    <span class="font-weight-400 font-size-16 text-white d-block">Manage your profile</span>
-                </h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item align-self-center me-2 dropdown dropstart">
-                            <a class="nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+        <div class="container">
+            <div class="row navbar-wrapper">
+                <div class="col-md-6 order-md-0 order-1 mt-md-0 mt-4">
+                    <h1>Informartion
+                        <span class="font-weight-400 font-size-16 text-white d-block">Manage your profile</span>
+                    </h1>
+                </div>
+                <div class="col-md-6 order-md-1 order-0 d-flex justify-content-between">
+                    <div class="dropdown align-self-center d-block d-md-none">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Informartion
+                            </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a href="index.html" class="dropdown-item">
+                                    <span class="icon-dashboard sidebar-icon align-middle"></span>
+                                    <span class="ps-4">Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="referral-links.html" class="dropdown-item">
+                                    <span class="icon-links sidebar-icon align-middle"></span>
+                                    <span class="ps-4 expanded-view-only">Referral Links</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    <span class="icon-widgets sidebar-icon align-middle"></span>
+                                    <span class="ps-4 expanded-view-only">Widgets</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    <span class="icon-transaction sidebar-icon align-middle"></span>
+                                    <span class="ps-4 expanded-view-only">Transactions
+                                            <span class="badge bg-danger text-white rounded-circle ms-2">1</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    <span class="icon-user sidebar-icon align-middle"></span>
+                                    <span class="ps-4 expanded-view-only">My Subscribers</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    <span class="icon-earnings sidebar-icon align-middle"></span>
+                                    <span class="ps-4 expanded-view-only">My Earnings</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    <span class="icon-materials sidebar-icon align-middle"></span>
+                                    <span class="ps-4 expanded-view-only">Useful Materials</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    <span class="icon-analytics sidebar-icon align-middle"></span>
+                                    <spaan class="ps-4 expanded-view-only">Analytics</spaan>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex ms-auto">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
                                 <div class="notifications-style">
                                     <img src="images/notification-icon.svg" style="transform: rotate(18.04deg)">
-                                    <span class="badge position-absolute bg-danger text-white rounded-circle ms-2" style="top: 0; left: -10px;">1</span>
+                                    <span class="badge position-absolute bg-danger text-white rounded-circle ms-2" style="top: 15px; left: -15px;">1</span>
                                 </div>
                             </a>
                             <ul class="dropdown-menu" style="min-width: 342px;">
@@ -152,16 +208,14 @@
                                     </div>
                                 </li>
                             </ul>
-
-                        </li>
-                        <li class="nav-item">
+                        </div>
+                        <div class="align-self-center ms-2">
                             <img class="user-img" src="images/user.svg" alt="user">
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-        <div class="container">
+
             <div class="row">
                 <div class="col-lg-3 mb-4">
                     <div class="bg-light border-radius-20px p-3 h-100">
@@ -212,7 +266,7 @@
                         <div class="font-weight-700 font-size-16 text-indigo">Instagram</div>
 
                         <div class="d-flex justify-content-between mb-4">
-                            <div class="bg-light border-radius-10px border-3 p-1 w-100">
+                            <div class="bg-light border-radius-10px border-3 p-2 w-100">
                                 <div class="text-indigo">www.instagram.com/username</div>
                             </div>
                             <div class="align-self-center">
@@ -223,7 +277,7 @@
                         <div class="font-weight-700 font-size-16 text-indigo">Facebook</div>
 
                         <div class="d-flex justify-content-between mb-4">
-                            <div class="bg-light border-radius-10px border-3 p-1 w-100">
+                            <div class="bg-light border-radius-10px border-3 p-2 w-100">
                                 <div class="text-indigo">www.facebook.com/username</div>
                             </div>
                             <div class="align-self-center">
@@ -234,7 +288,7 @@
                         <div class="font-weight-700 font-size-16 text-indigo">Youtube</div>
 
                         <div class="d-flex justify-content-between">
-                            <div class="bg-light border-radius-10px border-3 p-1 w-100">
+                            <div class="bg-light border-radius-10px border-3 p-2 w-100">
                                 <div class="text-indigo">www.youtube.com/channelname</div>
                             </div>
                             <div class="align-self-center">
