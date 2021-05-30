@@ -445,8 +445,13 @@ textarea.form-control {
         color: $white-color;
         background-color: $green-color;
     }
-    .dropdown-toggle::after {
-        display: block;
+    .dropdown-toggle {
+        .filter-option-inner-inner {
+            padding: 1px;
+        }
+        &::after {
+            display: block;
+        }
     }
     .dropdown-toggle:focus,
     .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
@@ -460,6 +465,7 @@ textarea.form-control {
     color: $blue-violet-color;
     font-weight: 500;
     font-size: 16px;
+    line-height: 30px;
 }
 
 .transactions-table.table>:not(caption)>*>* {
@@ -471,5 +477,20 @@ textarea.form-control {
         font-weight: 400;
         font-size: 14px;
         color: $indigo-color;
+    }
+}
+
+.copy-clipboard {
+    .form-control {
+        background: #E3E4FF;
+        border-radius: 10px;
+        border: none;
+        &::placeholder {
+            color: #838BC5;
+            opacity: 1;
+        }
+    }
+    .btn {
+        background: #838BC5;
     }
 }

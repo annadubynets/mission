@@ -65,6 +65,10 @@
   background-color: #E84358;
 }
 
+.bg-success {
+  background-color: #60B355 !important;
+}
+
 .text-indigo {
   color: #1A205A;
 }
@@ -95,6 +99,10 @@
 
 .text-secondary {
   color: #ACACC8 !important;
+}
+
+.pt-80px {
+  padding-top: 80px;
 }
 
 .pb-34px {
@@ -540,6 +548,9 @@ textarea.form-control {
   color: #FFFFFF;
   background-color: #60B355;
 }
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+  padding: 1px;
+}
 .bootstrap-select .dropdown-toggle::after {
   display: block;
 }
@@ -554,6 +565,7 @@ textarea.form-control {
   color: #6266EA;
   font-weight: 500;
   font-size: 16px;
+  line-height: 30px;
 }
 
 .transactions-table.table > :not(caption) > * > * {
@@ -564,6 +576,19 @@ textarea.form-control {
   font-weight: 400;
   font-size: 14px;
   color: #1A205A;
+}
+
+.copy-clipboard .form-control {
+  background: #E3E4FF;
+  border-radius: 10px;
+  border: none;
+}
+.copy-clipboard .form-control::placeholder {
+  color: #838BC5;
+  opacity: 1;
+}
+.copy-clipboard .btn {
+  background: #838BC5;
 }
 
 /*# sourceMappingURL=style.css.map */

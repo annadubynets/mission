@@ -216,26 +216,26 @@
             </div>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6 mb-lg-0 mb-3">
                     <div class="bg-light border-radius-20px p-3 h-100">
                         <h2 class="mb-3">New Code</h2>
 
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-lg-4 mb-lg-0 mb-3">
                                 <select class="selectpicker w-100">
                                     <option>Theme</option>
                                     <option>Theme 2</option>
                                     <option>Theme 3</option>
                                 </select>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-lg-4 mb-lg-0 mb-3">
                                 <select class="selectpicker w-100">
                                     <option>Currency</option>
                                     <option>Currency 2</option>
                                     <option>ThemCurrencye 3</option>
                                 </select>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-lg-4">
                                 <select class="selectpicker w-100">
                                     <option>Language</option>
                                     <option>Language 2</option>
@@ -243,7 +243,7 @@
                                 </select>
                             </div>
 
-                            <div class="col-md-12 mt-3 mb-4">
+                            <div class="col-lg-12 mt-3 mb-4">
                                 <input type="text" class="form-control" id="inputWebsite" placeholder="Enter your Website">
                             </div>
                         </div>
@@ -253,41 +253,52 @@
                         </div>
 
                         <div class="row mt-84x mb-2">
-                            <div class="col-md-1 align-self-center">
+                            <div class="col-lg-1 align-self-center">
                                 <div class="text-purple">CSS</div>
                             </div>
-                            <div class="col-md-11">
-                                <div class="d-flex justify-content-between bg-info border-radius-10px p-2 w-100">
-                                    <div class="text-purple">Your code here</div>
+                            <div class="col-lg-11">
+                                <div class="d-flex justify-content-between bg-info border-radius-10px w-100">
+                                    <div class="text-purple align-self-center ps-2">Your code here</div>
+                                    <div class="bg-success p-2 text-white border-radius-10px">
+                                        Copied
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row mb-2">
-                            <div class="col-md-1 align-self-center">
+                            <div class="col-lg-1 align-self-center">
                                 <div class="text-purple">JAVA</div>
                             </div>
-                            <div class="col-md-11">
-                                <div class="d-flex justify-content-between bg-info border-radius-10px p-2 w-100">
-                                    <div class="text-purple">Your code here</div>
+                            <div class="col-lg-11">
+                                <div class="input-group w-100 copy-clipboard">
+                                    <input id="textCopy" type="text" class="form-control" placeholder="Your code here">
+
+                                    <button class="btn" data-clipboard-target="#textCopy">
+                                        <img src="images/clip-to-clipboard.svg" alt="Copy to clipboard">
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="row mb-2">
-                            <div class="col-md-1 align-self-center">
+                        <div class="row lg-2">
+                            <div class="col-lg-1 align-self-center">
                                 <div class="text-purple">HTML</div>
                             </div>
-                            <div class="col-md-11">
-                                <div class="d-flex justify-content-between bg-info border-radius-10px p-2 w-100">
-                                    <div class="text-purple">Your code here</div>
+                            <div class="col-lg-11">
+                                <div class="input-group w-100 copy-clipboard">
+                                    <input id="textCopy" type="text" class="form-control" placeholder="Your code here">
+
+                                    <button class="btn" data-clipboard-target="#textCopy">
+                                        <img src="images/clip-to-clipboard.svg" alt="Copy to clipboard">
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="bg-light border-radius-20px p-3 h-100">
                         <h2 class="mb-3">Tutorial</h2>
                         <div class="font-size-14 text-secondary mb-4">Learn how to apply your widgets to your website with simple steps</div>

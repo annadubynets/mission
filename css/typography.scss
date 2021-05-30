@@ -63,6 +63,10 @@
     background-color: $crimson-color;
 }
 
+.bg-success {
+    background-color: $green-color!important;
+}
+
 .text-indigo {
     color: $indigo-color;
 }
@@ -93,6 +97,10 @@
 
 .text-secondary {
     color: $gains-boro-color!important;
+}
+
+.pt-80px {
+    padding-top: 80px;
 }
 
 .pb-34px {

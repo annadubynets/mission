@@ -14,3 +14,19 @@ $(document).ready(function() {
 });
 
 $('select').selectpicker();
+
+//--------------------------//
+//        Clipboard utils   //
+//--------------------------//
+var ClipboardUtils = ClipboardUtils || {}
+ClipboardUtils.copyToClipboard = function(text) {
+    if (!text) {
+        return false;
+    }
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val(text).select();
+    document.execCommand("copy");
+    $temp.remove();
+    return text;
+}
