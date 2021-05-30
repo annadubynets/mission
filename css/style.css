@@ -591,4 +591,22 @@ textarea.form-control {
   background: #838BC5;
 }
 
+.page-link {
+  background: transparent;
+  color: #ACACC8;
+  border: none;
+  font-weight: 500;
+  font-size: 12px;
+}
+.page-link.active {
+  border-radius: 50%;
+  background-color: #6266EA;
+  color: #FFFFFF;
+}
+
+.page-item:first-child .page-link {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
 /*# sourceMappingURL=style.css.map */
