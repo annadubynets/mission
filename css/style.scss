@@ -512,3 +512,15 @@ textarea.form-control {
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
 }
+
+.modal-content {
+    background: #F6F6FC;
+    border-radius: 20px;
+    .modal-header {
+        border-bottom: none;
+    }
+    .modal-footer {
+        border-top: none;
+        justify-content: center;
+    }
+}

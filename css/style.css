@@ -609,4 +609,16 @@ textarea.form-control {
   border-bottom-left-radius: 50%;
 }
 
+.modal-content {
+  background: #F6F6FC;
+  border-radius: 20px;
+}
+.modal-content .modal-header {
+  border-bottom: none;
+}
+.modal-content .modal-footer {
+  border-top: none;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=style.css.map */
