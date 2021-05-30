@@ -48,7 +48,7 @@
                     <span class="ps-4 expanded-view-only">Widgets</span>
                 </a>
             </li>
-            <li class="active">
+            <li>
                 <a href="transactions.html">
                     <span class="icon-transaction sidebar-icon align-middle"></span>
                     <span class="ps-4 expanded-view-only">Transactions
@@ -56,7 +56,7 @@
                     </span>
                 </a>
             </li>
-            <li>
+            <li class="active">
                 <a href="subscribers.html">
                     <span class="icon-user sidebar-icon align-middle"></span>
                     <span class="ps-4 expanded-view-only">My Subscribers</span>
@@ -92,14 +92,14 @@
         <div class="container">
             <div class="row navbar-wrapper">
                 <div class="col-md-6 order-md-0 order-1 mt-md-0 mt-4">
-                    <h1>Transaction History
+                    <h1>My Subscribers
                         <span class="font-weight-400 font-size-16 text-white d-block">Monitor Everything</span>
                     </h1>
                 </div>
                 <div class="col-md-6 order-md-1 order-0 d-flex justify-content-between">
                     <div class="dropdown align-self-center d-block d-md-none">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Transactions
+                            My Subscribers
                             </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
@@ -127,9 +127,11 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="dropdown-item">
-                                    <span class="icon-user sidebar-icon align-middle"></span>
-                                    <span class="ps-4 expanded-view-only">My Subscribers</span>
+                                <a href="transactions.html" class="dropdown-item">
+                                    <span class="icon-transaction sidebar-icon align-middle"></span>
+                                    <span class="ps-4 expanded-view-only">Transactions
+                                            <span class="badge bg-danger text-white rounded-circle ms-2">1</span>
+                                    </span>
                                 </a>
                             </li>
                             <li>
@@ -218,48 +220,56 @@
                     <div class="bg-light border-radius-20px p-3 mb-4">
                         <h2 class="mb-3">Filter By</h2>
 
-                        <div class="text-violet font-size-18 font-weight-500">Source</div>
+                        <div class="text-violet font-size-18 font-weight-500">Subscription Source</div>
                         <select class="selectpicker w-100">
-                            <option>Referral Link</option>
-                            <option>Referral Link 2</option>
-                            <option>Referral Link 3</option>
+                            <option>Instagram Story</option>
+                            <option>Instagram Story 2</option>
+                            <option>Instagram Story 3</option>
                         </select>
-
-                        <div class="text-violet font-size-18 font-weight-500 mt-3">Period</div>
-                        <input type="date" class="form-control" id="inputPeriod">
-
                     </div>
                     <div class="bg-light border-radius-20px p-3">
-                        <h2 class="mb-3">Metrics</h2>
+                        <h2 class="mb-3">Subscription Metrics</h2>
 
                         <div class="bg-light border-radius-10px border-3 p-2 w-100 mb-1">
                             <div class="d-flex justify-content-between">
-                                <div class="font-size-14 text-muted align-self-center">Total Clicks</div>
+                                <div class="font-size-14 text-muted align-self-center">Active Subscribers</div>
+                                <div class="font-weight-500 font-size-22 text-violet">5500</div>
+                            </div>
+                        </div>
+                        <div class="bg-light border-radius-10px border-3 p-2 w-100 mb-1">
+                            <div class="d-flex justify-content-between">
+                                <div class="font-size-14 text-muted align-self-center">Cancelled Subscriptions</div>
                                 <div class="font-weight-500 font-size-22 text-violet">10,314</div>
                             </div>
                         </div>
                         <div class="bg-light border-radius-10px border-3 p-2 w-100 mb-1">
                             <div class="d-flex justify-content-between">
-                                <div class="font-size-14 text-muted align-self-center">Minimum Sales Amount</div>
+                                <div class="font-size-14 text-muted align-self-center">Monthly Revenue</div>
                                 <div class="font-weight-500 font-size-22 text-violet">$10,314</div>
                             </div>
                         </div>
                         <div class="bg-light border-radius-10px border-3 p-2 w-100 mb-1">
                             <div class="d-flex justify-content-between">
-                                <div class="font-size-14 text-muted align-self-center">Maximum Sales Amount</div>
+                                <div class="font-size-14 text-muted align-self-center">Monthly Earnings</div>
                                 <div class="font-weight-500 font-size-22 text-violet">$10,314</div>
                             </div>
                         </div>
                         <div class="bg-light border-radius-10px border-3 p-2 w-100 mb-1">
                             <div class="d-flex justify-content-between">
-                                <div class="font-size-14 text-muted align-self-center">Average Sales Amount</div>
-                                <div class="font-weight-500 font-size-22 text-violet">$10,314</div>
+                                <div class="font-size-14 text-muted align-self-center">Revenue per Subscriber</div>
+                                <div class="font-weight-500 font-size-22 text-violet">10,31</div>
                             </div>
                         </div>
                         <div class="bg-light border-radius-10px border-3 p-2 w-100 mb-1">
                             <div class="d-flex justify-content-between">
-                                <div class="font-size-14 text-muted align-self-center">Number of Offsets</div>
-                                <div class="font-weight-500 font-size-22 text-violet">10,314</div>
+                                <div class="font-size-14 text-muted align-self-center">Monthly Offsets</div>
+                                <div class="font-weight-500 font-size-22 text-violet">10,314 co2eq</div>
+                            </div>
+                        </div>
+                        <div class="bg-light border-radius-10px border-3 p-2 w-100 mb-1">
+                            <div class="d-flex justify-content-between">
+                                <div class="font-size-14 text-muted align-self-center">Monthly Trees Planted</div>
+                                <div class="font-weight-500 font-size-22 text-violet">55</div>
                             </div>
                         </div>
                         <div class="bg-light border-radius-10px border-3 p-2 w-100 mb-1">
@@ -271,13 +281,19 @@
                         </div>
                         <div class="bg-light border-radius-10px border-3 p-2 w-100 mb-1">
                             <div class="d-flex justify-content-between">
-                                <div class="font-size-14 text-muted align-self-center">Total Sales Amount</div>
-                                <div class="font-weight-500 font-size-22 text-violet">$10,314</div>
+                                <div class="font-size-14 text-muted align-self-center">Total Trees Planted</div>
+                                <div class="font-weight-500 font-size-22 text-violet">10,314</div>
                             </div>
                         </div>
                         <div class="bg-light border-radius-10px border-3 p-2 w-100 mb-1">
                             <div class="d-flex justify-content-between">
-                                <div class="font-size-14 text-muted align-self-center">My Earnings</div>
+                                <div class="font-size-14 text-muted align-self-center">Total Revenue Generated</div>
+                                <div class="font-weight-500 font-size-22 text-violet">$1,526</div>
+                            </div>
+                        </div>
+                        <div class="bg-light border-radius-10px border-3 p-2 w-100 mb-1">
+                            <div class="d-flex justify-content-between">
+                                <div class="font-size-14 text-muted align-self-center">Total Earnings</div>
                                 <div class="font-weight-500 font-size-22 text-violet">$10,314</div>
                             </div>
                         </div>
@@ -285,16 +301,19 @@
                 </div>
                 <div class="col-lg-9">
                     <div class="bg-light border-radius-20px p-3 mb-4">
-                        <h2 class="mb-3">Transaction History</h2>
+                        <h2 class="mb-3">Subscriber Details</h2>
 
                         <table class="table transactions-table">
                             <thead>
                                 <tr>
-                                    <th scope="col">Name/Surname</th>
+                                    <th scope="col">ID</th>
                                     <th scope="col">Date</th>
-                                    <th scope="col">Project</th>
-                                    <th scope="col">Purchase Total</th>
-                                    <th scope="col">Source</th>
+                                    <th scope="col">Package</th>
+                                    <th scope="col">Offset Amount
+                                        <span class="d-block font-weight-400">(CO2eq)</span></th>
+                                    <th scope="col">Total Trees Planted
+                                    </th>
+                                    <th scope="col">Channel</th>
                                     <th scope="col">Earnings</th>
                                 </tr>
                             </thead>
@@ -302,106 +321,119 @@
                                 <tr>
                                     <td><span class="font-weight-500">Transaction Name</span></td>
                                     <td>05 April 2020</td>
-                                    <td>Project Name</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
-                                    <td>Instagram Story</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
+                                    <td>Package 1</td>
+                                    <td>10.000</td>
+                                    <td>1000</td>
+                                    <td>Instagram</td>
+                                    <td><span class="font-weight-500">$ 300</span></td>
                                 </tr>
                                 <tr>
                                     <td><span class="font-weight-500">Transaction Name</span></td>
                                     <td>05 April 2020</td>
-                                    <td>Project Name</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
-                                    <td>Instagram Story</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
+                                    <td>Package 1</td>
+                                    <td>10.000</td>
+                                    <td>1000</td>
+                                    <td>Instagram</td>
+                                    <td><span class="font-weight-500">$ 300</span></td>
                                 </tr>
                                 <tr>
                                     <td><span class="font-weight-500">Transaction Name</span></td>
                                     <td>05 April 2020</td>
-                                    <td>Project Name</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
-                                    <td>Instagram Story</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
+                                    <td>Package 1</td>
+                                    <td>10.000</td>
+                                    <td>1000</td>
+                                    <td>Instagram</td>
+                                    <td><span class="font-weight-500">$ 300</span></td>
                                 </tr>
                                 <tr>
                                     <td><span class="font-weight-500">Transaction Name</span></td>
                                     <td>05 April 2020</td>
-                                    <td>Project Name</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
-                                    <td>Instagram Story</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
+                                    <td>Package 1</td>
+                                    <td>10.000</td>
+                                    <td>1000</td>
+                                    <td>Instagram</td>
+                                    <td><span class="font-weight-500">$ 300</span></td>
                                 </tr>
                                 <tr>
                                     <td><span class="font-weight-500">Transaction Name</span></td>
                                     <td>05 April 2020</td>
-                                    <td>Project Name</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
-                                    <td>Instagram Story</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
+                                    <td>Package 1</td>
+                                    <td>10.000</td>
+                                    <td>1000</td>
+                                    <td>Instagram</td>
+                                    <td><span class="font-weight-500">$ 300</span></td>
                                 </tr>
                                 <tr>
                                     <td><span class="font-weight-500">Transaction Name</span></td>
                                     <td>05 April 2020</td>
-                                    <td>Project Name</td>
-                                    <td><span class="font-weight-500 text-danger">$ 300</span></td>
-                                    <td>Instagram Story</td>
-                                    <td><span class="font-weight-500 text-danger">$ 300</span></td>
+                                    <td>Package 1</td>
+                                    <td>10.000</td>
+                                    <td>1000</td>
+                                    <td>Instagram</td>
+                                    <td><span class="font-weight-500">$ 300</span></td>
                                 </tr>
                                 <tr>
                                     <td><span class="font-weight-500">Transaction Name</span></td>
                                     <td>05 April 2020</td>
-                                    <td>Project Name</td>
-                                    <td><span class="font-weight-500 text-danger">$ 300</span></td>
-                                    <td>Instagram Story</td>
-                                    <td><span class="font-weight-500 text-danger">$ 300</span></td>
+                                    <td>Package 1</td>
+                                    <td>10.000</td>
+                                    <td>1000</td>
+                                    <td>Instagram</td>
+                                    <td><span class="font-weight-500">$ 300</span></td>
                                 </tr>
                                 <tr>
                                     <td><span class="font-weight-500">Transaction Name</span></td>
                                     <td>05 April 2020</td>
-                                    <td>Project Name</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
-                                    <td>Instagram Story</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
+                                    <td>Package 1</td>
+                                    <td>10.000</td>
+                                    <td>1000</td>
+                                    <td>Instagram</td>
+                                    <td><span class="font-weight-500">$ 300</span></td>
                                 </tr>
                                 <tr>
                                     <td><span class="font-weight-500">Transaction Name</span></td>
                                     <td>05 April 2020</td>
-                                    <td>Project Name</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
-                                    <td>Instagram Story</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
+                                    <td>Package 1</td>
+                                    <td>10.000</td>
+                                    <td>1000</td>
+                                    <td>Instagram</td>
+                                    <td><span class="font-weight-500">$ 300</span></td>
                                 </tr>
                                 <tr>
                                     <td><span class="font-weight-500">Transaction Name</span></td>
                                     <td>05 April 2020</td>
-                                    <td>Project Name</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
-                                    <td>Instagram Story</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
+                                    <td>Package 1</td>
+                                    <td>10.000</td>
+                                    <td>1000</td>
+                                    <td>Instagram</td>
+                                    <td><span class="font-weight-500">$ 300</span></td>
                                 </tr>
                                 <tr>
                                     <td><span class="font-weight-500">Transaction Name</span></td>
                                     <td>05 April 2020</td>
-                                    <td>Project Name</td>
-                                    <td><span class="font-weight-500 text-danger">$ 300</span></td>
-                                    <td>Instagram Story</td>
-                                    <td><span class="font-weight-500 text-danger">$ 300</span></td>
+                                    <td>Package 1</td>
+                                    <td>10.000</td>
+                                    <td>1000</td>
+                                    <td>Instagram</td>
+                                    <td><span class="font-weight-500">$ 300</span></td>
                                 </tr>
                                 <tr>
                                     <td><span class="font-weight-500">Transaction Name</span></td>
                                     <td>05 April 2020</td>
-                                    <td>Project Name</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
-                                    <td>Instagram Story</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
+                                    <td>Package 1</td>
+                                    <td>10.000</td>
+                                    <td>1000</td>
+                                    <td>Instagram</td>
+                                    <td><span class="font-weight-500">$ 300</span></td>
                                 </tr>
                                 <tr>
                                     <td><span class="font-weight-500">Transaction Name</span></td>
                                     <td>05 April 2020</td>
-                                    <td>Project Name</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
-                                    <td>Instagram Story</td>
-                                    <td><span class="font-weight-500 text-success">$ 300</span></td>
+                                    <td>Package 1</td>
+                                    <td>10.000</td>
+                                    <td>1000</td>
+                                    <td>Instagram</td>
+                                    <td><span class="font-weight-500">$ 300</span></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -410,7 +442,6 @@
             </div>
         </div>
     </div>
-
 </div>
 
 <script src="//code.jquery.com/jquery-1.12.4.js"></script>
