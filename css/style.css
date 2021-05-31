@@ -114,6 +114,10 @@
   margin-top: 84px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   background-image: url("../images/mission_bg.png");

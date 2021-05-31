@@ -258,35 +258,48 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <div class="row mb-2">
+
+                                            <div class="row mb-2 verification-item">
                                                 <div class="col-lg-12">
                                                     <div class="bg-info border-radius-10px p-3 d-flex justify-content-between">
                                                         <div class="d-flex">
                                                             <img src="images/seflie.svg" class="pe-2">
                                                             <div class="align-self-center">
-                                                                <p class="text-violet font-weight-500 font-size-16 mb-0">Seflie with ID</p>
-                                                                <p class="text-muted font-size-14 mb-0">belgeadi.jpeg</p>
-                                                                <p class="text-success font-size-14 mb-0">Uploaded</p>
+                                                                <p class="text-violet font-weight-500 font-size-16 mb-0">Selfie with ID</p>
+                                                                <p class="text-muted font-size-14 mb-0 file-name d-none"></p>
+                                                                <p class="text-success font-size-14 mb-0 upload-status">Not uploaded</p>
                                                             </div>
                                                         </div>
                                                         <div class="align-self-center">
-                                                            <span class="icon-edit"></span>
+                                                            <input type="file" name="file-selfie" multiple=false
+                                                                class="file-upload-input"
+                                                                style="display: none;"
+                                                                accept='image/*'
+                                                            >
+                                                            <span class="icon-edit btn-select-file cursor-pointer"></span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row">
+
+                                            <div class="row verification-item">
                                                 <div class="col-lg-12">
                                                     <div class="bg-info border-radius-10px p-3 d-flex justify-content-between">
                                                         <div class="d-flex">
                                                             <img src="images/identification-document.svg" class="pe-2">
                                                             <div class="align-self-center">
                                                                 <p class="text-violet font-weight-500 font-size-16 mb-0">Identification Document</p>
-                                                                <p class="text-success font-size-14 mb-0">Not Uploaded</p>
+                                                                <p class="text-muted font-size-14 mb-0 file-name d-none"></p>
+                                                                <p class="text-success font-size-14 mb-0 upload-status">Not uploaded</p>
                                                             </div>
                                                         </div>
                                                         <div class="align-self-center">
-                                                            <span class="icon-edit"></span>
+                                                            <input type="file" name="file-id-doc" multiple=false
+                                                                class="file-upload-input"
+                                                                style="display: none;"
+                                                                accept='image/*,application/pdf'
+                                                            >
+                                                            <span class="icon-edit btn-select-file cursor-pointer"></span>
                                                         </div>
                                                     </div>
                                                 </div>
