@@ -609,6 +609,8 @@ textarea.form-control {
 }
 .copy-clipboard .btn {
   background: #838BC5;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .page-link {
