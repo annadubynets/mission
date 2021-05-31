@@ -163,6 +163,23 @@ a[data-toggle="collapse"] {
     right: 0;
 }
 
+.navbar-dropdown .dropdown-toggle {
+    &::after {
+        position: absolute;
+        top: 40%;
+        right: -8px;
+        transform: translateY(-50%);
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border-top: none;
+        border-right: none;
+        border-bottom: none;
+        border-left: none;
+        background: url("../images/dropdown-icon.svg") no-repeat;
+    }
+}
+
 .dropdown-item .sidebar-icon::before {
     color: $indigo-color;
     font-size: 20px;
