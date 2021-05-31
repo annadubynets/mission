@@ -50,7 +50,6 @@ $(function() {
 });
 
 
-
 $(function() {
     $('.verification-item').on('click', '.btn-select-file', function() {
         $(this).closest('.verification-item').find('.file-upload-input').click();
