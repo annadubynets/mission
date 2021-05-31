@@ -1,5 +1,6 @@
 @import "./bootstrap.min.css";
 @import "./bootstrap-select.min.css";
+@import "./daterangepicker.css";
 @import "fonts.css";
 @import "variables";
 @import "typography";
@@ -146,7 +147,7 @@ a[data-toggle="collapse"] {
     display: none;
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 8px;
     transform: translateY(-50%);
 }
 
@@ -554,4 +555,15 @@ textarea.form-control {
         border-top: none;
         justify-content: center;
     }
+}
+
+.daterange-style::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 22px;
+    height: 22px;
+    background: url("../images/date-period-icon.svg") no-repeat;
 }

@@ -226,8 +226,9 @@
                         </select>
 
                         <div class="text-violet font-size-18 font-weight-500 mt-3">Period</div>
-                        <input type="date" class="form-control" id="inputPeriod">
-
+                        <div class="daterange-style position-relative">
+                            <input type="text" name="daterange" value="02/11/2021 - 03/11/2021" class="form-control" />
+                        </div>
                     </div>
                     <div class="bg-light border-radius-20px p-3">
                         <h2 class="mb-3">Metrics</h2>
@@ -433,6 +434,8 @@
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/bootstrap-select.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
 <script src="js/scripts.js"></script>
 
 </html>
