@@ -541,7 +541,15 @@ textarea.form-control {
   box-sizing: border-box;
   border-radius: 10px;
 }
+.btn-light:hover {
+  background: #F5F6FC;
+}
 
+.bootstrap-select .dropdown-menu .dropdown-item {
+  font-weight: 400;
+  font-size: 16px;
+  color: #ACACC8;
+}
 .bootstrap-select .dropdown-item.active,
 .bootstrap-select .bootstrap-select .dropdown-item:active,
 .bootstrap-select .bootstrap-select .dropdown-menu .dropdown-item:hover {
@@ -552,11 +560,22 @@ textarea.form-control {
   padding: 1px;
 }
 .bootstrap-select .dropdown-toggle::after {
-  display: block;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  background: url("../images/dropdown-icon.svg") no-repeat;
 }
 .bootstrap-select .dropdown-toggle:focus,
 .bootstrap-select .bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
   outline: none !important;
+}
+.bootstrap-select .dropdown-menu .dropdown-item:hover {
+  color: #FFFFFF;
+  background-color: #60B355;
 }
 
 .transactions-table.table > thead {
@@ -600,8 +619,20 @@ textarea.form-control {
 }
 .page-link.active {
   border-radius: 50%;
-  background-color: #6266EA;
-  color: #FFFFFF;
+  background-color: #6266EA !important;
+  color: #FFFFFF !important;
+  outline: none;
+  box-shadow: none;
+}
+
+.page-link:focus {
+  box-shadow: none;
+}
+
+.page-link:hover {
+  color: #6266EA !important;
+  outline: none;
+  box-shadow: none;
 }
 
 .page-item:first-child .page-link {

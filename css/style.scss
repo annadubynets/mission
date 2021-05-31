@@ -436,9 +436,17 @@ textarea.form-control {
     color: $gains-boro-color!important;
     box-sizing: border-box;
     border-radius: 10px;
+    &:hover {
+        background: #F5F6FC;
+    }
 }
 
 .bootstrap-select {
+    .dropdown-menu .dropdown-item {
+        font-weight: 400;
+        font-size: 16px;
+        color: $gains-boro-color;
+    }
     .dropdown-item.active,
     .bootstrap-select .dropdown-item:active,
     .bootstrap-select .dropdown-menu .dropdown-item:hover {
@@ -450,12 +458,23 @@ textarea.form-control {
             padding: 1px;
         }
         &::after {
-            display: block;
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+            border-left: none;
+            background: url("../images/dropdown-icon.svg") no-repeat;
         }
     }
     .dropdown-toggle:focus,
     .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
         outline: none!important;
+    }
+    .dropdown-menu .dropdown-item:hover {
+        color: $white-color;
+        background-color: $green-color;
     }
 }
 
@@ -503,9 +522,21 @@ textarea.form-control {
     font-size: $font-size-12;
     &.active {
         border-radius: 50%;
-        background-color: $blue-violet-color;
-        color: $white-color;
+        background-color: $blue-violet-color!important;
+        color: $white-color!important;
+        outline: none;
+        box-shadow: none;
     }
+}
+
+.page-link:focus {
+    box-shadow: none;
+}
+
+.page-link:hover {
+    color: $blue-violet-color!important;
+    outline: none;
+    box-shadow: none;
 }
 
 .page-item:first-child .page-link {
