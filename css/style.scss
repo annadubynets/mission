@@ -121,6 +121,10 @@ a[aria-expanded="true"] {
     #sidebar {
         display: none;
     }
+    #sidebar ul li.active>a,
+    a[aria-expanded="true"] {
+        background: transparent;
+    }
 }
 
 .navbar-wrapper {
