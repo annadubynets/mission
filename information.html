@@ -92,13 +92,13 @@
     <div id="content">
         <div class="container">
             <div class="row navbar-wrapper">
-                <div class="col-md-6 order-md-0 order-1 mt-md-0 mt-4">
+                <div class="col-lg-8 order-lg-0 order-1 mt-lg-0 mt-4">
                     <h1>Informartion
                         <span class="font-weight-400 font-size-16 text-white d-block">Manage your profile</span>
                     </h1>
                 </div>
-                <div class="col-md-6 order-md-1 order-0 d-flex justify-content-between">
-                    <div class="dropdown navbar-dropdown align-self-center d-block d-md-none">
+                <div class="col-lg-4 order-lg-1 order-0 d-flex justify-content-between align-self-center">
+                    <div class="dropdown navbar-dropdown align-self-center d-block d-lg-none">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Informartion
                             </a>
@@ -217,7 +217,7 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-3 mb-4">
+                <div class="col-xxl-4 col-xl-6 col-lg-6 mb-4">
                     <div class="bg-light border-radius-20px p-3 h-100">
                         <h2 class="mb-3">Personal Information</h2>
 
@@ -271,11 +271,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="align-self-center">
-                                                            <input type="file" name="file-selfie" multiple=false
-                                                                class="file-upload-input"
-                                                                style="display: none;"
-                                                                accept='image/*'
-                                                            >
+                                                            <input type="file" name="file-selfie" multiple=false class="file-upload-input" style="display: none;" accept='image/*'>
                                                             <span class="icon-edit btn-select-file cursor-pointer"></span>
                                                         </div>
                                                     </div>
@@ -294,11 +290,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="align-self-center">
-                                                            <input type="file" name="file-id-doc" multiple=false
-                                                                class="file-upload-input"
-                                                                style="display: none;"
-                                                                accept='image/*,application/pdf'
-                                                            >
+                                                            <input type="file" name="file-id-doc" multiple=false class="file-upload-input" style="display: none;" accept='image/*,application/pdf'>
                                                             <span class="icon-edit btn-select-file cursor-pointer"></span>
                                                         </div>
                                                     </div>
@@ -323,39 +315,45 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-3 mb-4">
+                <div class="col-xxl-4 col-xl-6 col-lg-6 mb-4">
                     <div class="bg-light border-radius-20px p-3 mb-4">
                         <h2 class="mb-3">Platform Information</h2>
 
                         <div class="font-weight-700 font-size-16 text-indigo">Instagram</div>
 
-                        <div class="d-flex justify-content-between mb-4">
-                            <div class="bg-light border-radius-10px border-3 p-2 w-100">
-                                <div class="text-indigo">www.instagram.com/username</div>
+                        <div class="row mb-3">
+                            <div class="col-11">
+                                <div class="bg-light border-radius-10px border-3 p-2">
+                                    <div class="text-indigo text-truncate">www.instagram.com/username</div>
+                                </div>
                             </div>
-                            <div class="align-self-center">
+                            <div class="col-1 text-end align-self-center">
                                 <span class="icon-delete"></span>
                             </div>
                         </div>
 
                         <div class="font-weight-700 font-size-16 text-indigo">Facebook</div>
 
-                        <div class="d-flex justify-content-between mb-4">
-                            <div class="bg-light border-radius-10px border-3 p-2 w-100">
-                                <div class="text-indigo">www.facebook.com/username</div>
+                        <div class="row mb-3">
+                            <div class="col-11">
+                                <div class="bg-light border-radius-10px border-3 p-2">
+                                    <div class="text-indigo text-truncate">www.facebook.com/username</div>
+                                </div>
                             </div>
-                            <div class="align-self-center">
+                            <div class="col-1 text-end align-self-center">
                                 <span class="icon-delete"></span>
                             </div>
                         </div>
 
                         <div class="font-weight-700 font-size-16 text-indigo">Youtube</div>
 
-                        <div class="d-flex justify-content-between">
-                            <div class="bg-light border-radius-10px border-3 p-2 w-100">
-                                <div class="text-indigo">www.youtube.com/channelname</div>
+                        <div class="row">
+                            <div class="col-11">
+                                <div class="bg-light border-radius-10px border-3 p-2">
+                                    <div class="text-indigo text-truncate">www.youtube.com/channelname</div>
+                                </div>
                             </div>
-                            <div class="align-self-center">
+                            <div class="col-1 text-end align-self-center">
                                 <span class="icon-delete"></span>
                             </div>
                         </div>

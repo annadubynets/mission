@@ -117,7 +117,7 @@ a[aria-expanded="true"] {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     #sidebar {
         display: none;
     }
@@ -128,7 +128,7 @@ a[aria-expanded="true"] {
     padding-bottom: 26px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .navbar-wrapper {
         padding-top: 0;
         padding-bottom: 26px;
