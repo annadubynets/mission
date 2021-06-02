@@ -348,6 +348,11 @@ a[data-toggle="collapse"] {
     border-radius: 5px;
 }
 
+.progress-bar-custom {
+    background-image: linear-gradient(to right, #3540AB 0%, #6266EA 52.6%, #60B355 100%);
+    border-radius: 5px;
+}
+
 table .transactions-table {
     td {
         border-bottom: none;
