@@ -31,7 +31,7 @@
                     <span class="ps-4 expanded-view-only">Dashboard</span>
                 </a>
             </li>
-            <li class="active">
+            <li>
                 <a href="information.html">
                     <span class="icon-information sidebar-icon align-middle"></span>
                     <span class="ps-4 expanded-view-only">Information</span>
@@ -69,7 +69,7 @@
                     <span class="ps-4 expanded-view-only">My Earnings</span>
                 </a>
             </li>
-            <li>
+            <li class="active">
                 <a href="useful-materials.html">
                     <span class="icon-materials sidebar-icon align-middle"></span>
                     <span class="ps-4 expanded-view-only">Useful Materials</span>
@@ -93,20 +93,26 @@
         <div class="container">
             <div class="row navbar-wrapper">
                 <div class="col-lg-8 order-lg-0 order-1 mt-lg-0 mt-4">
-                    <h1>Informartion
-                        <span class="font-weight-400 font-size-16 text-white d-block">Manage your profile</span>
+                    <h1>Useful Materials
+                        <span class="font-weight-400 font-size-16 text-white d-block">Step up your game</span>
                     </h1>
                 </div>
                 <div class="col-lg-4 order-lg-1 order-0 d-flex justify-content-between align-self-center">
                     <div class="dropdown navbar-dropdown align-self-center d-block d-lg-none">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Informartion
+                            Useful Materials
                             </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
                                 <a href="index.html" class="dropdown-item">
                                     <span class="icon-dashboard sidebar-icon align-middle"></span>
                                     <span class="ps-4">Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="information.html" class="dropdown-item">
+                                    <span class="icon-information sidebar-icon align-middle"></span>
+                                    <span class="ps-4">Informartion</span>
                                 </a>
                             </li>
                             <li>
@@ -139,12 +145,6 @@
                                 <a href="earnings.html" class="dropdown-item">
                                     <span class="icon-earnings sidebar-icon align-middle"></span>
                                     <span class="ps-4 expanded-view-only">My Earnings</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="useful-materials.html" class="dropdown-item">
-                                    <span class="icon-materials sidebar-icon align-middle"></span>
-                                    <span class="ps-4 expanded-view-only">Useful Materials</span>
                                 </a>
                             </li>
                             <li>
@@ -217,167 +217,160 @@
             </div>
 
             <div class="row">
-                <div class="col-xxl-4 col-xl-6 col-lg-6 mb-4">
-                    <div class="bg-light border-radius-20px p-3 h-100">
-                        <h2 class="mb-3">Personal Information</h2>
+                <div class="col-12">
+                    <div class="bg-light border-radius-20px p-3">
+                        <h2 class="mb-3">Banner Set</h2>
 
-                        <form>
-                            <div class="mb-3">
-                                <label for="inputName" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="inputName">
-                            </div>
-                            <div class="mb-3">
-                                <label for="inputSurname" class="form-label">Surname</label>
-                                <input type="text" class="form-control" id="inputSurname">
-                            </div>
-                            <div class="mb-3">
-                                <label for="inputBirthday" class="form-label">Birthday</label>
-                                <input type="date" class="form-control" id="inputBirthday">
-                            </div>
-                            <div class="mb-3">
-                                <label for="inputCountry" class="form-label">Country</label>
-                                <input type="text" class="form-control" id="inputCountry">
-                            </div>
-                            <div class="mb-3">
-                                <label for="inputEmail" class="form-label">E-mail</label>
-                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-3">
-                                <label for="inputAddress" class="form-label">Address</label>
-                                <textarea class="form-control" id="inputAddress" rows="3"></textarea>
-                            </div>
-
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verificationModal">
-                                Verify your Profile
-                              </button>
-                            <div class="modal fade" id="verificationModal" tabindex="-1" aria-labelledby="verificationModallLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h2 class="modal-title" id="verificationModalLabel">Verification</h2>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-
-                                            <div class="row mb-2 verification-item">
-                                                <div class="col-lg-12">
-                                                    <div class="bg-info border-radius-10px p-3 d-flex justify-content-between">
-                                                        <div class="d-flex">
-                                                            <img src="images/seflie.svg" class="pe-2">
-                                                            <div class="align-self-center">
-                                                                <p class="text-violet font-weight-500 font-size-16 mb-0">Selfie with ID</p>
-                                                                <p class="text-muted font-size-14 mb-0 file-name d-none"></p>
-                                                                <p class="text-success font-size-14 mb-0 upload-status">Not uploaded</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="align-self-center">
-                                                            <input type="file" name="file-selfie" multiple=false class="file-upload-input" style="display: none;" accept='image/*'>
-                                                            <span class="icon-edit btn-select-file cursor-pointer"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row verification-item">
-                                                <div class="col-lg-12">
-                                                    <div class="bg-info border-radius-10px p-3 d-flex justify-content-between">
-                                                        <div class="d-flex">
-                                                            <img src="images/identification-document.svg" class="pe-2">
-                                                            <div class="align-self-center">
-                                                                <p class="text-violet font-weight-500 font-size-16 mb-0">Identification Document</p>
-                                                                <p class="text-muted font-size-14 mb-0 file-name d-none"></p>
-                                                                <p class="text-success font-size-14 mb-0 upload-status">Not uploaded</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="align-self-center">
-                                                            <input type="file" name="file-id-doc" multiple=false class="file-upload-input" style="display: none;" accept='image/*,application/pdf'>
-                                                            <span class="icon-edit btn-select-file cursor-pointer"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary">Submit</button>
-                                        </div>
+                        <div class="row mb-3">
+                            <div class="col-lg-4 mb-lg-0 mb-3">
+                                <div class="d-flex justify-content-between border-bottom">
+                                    <h3>Images</h3>
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination mb-0">
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-gray.png" class="w-100">
+                                    </div>
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-gray.png" class="w-100">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-gray.png" class="w-100">
+                                    </div>
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-color.png" class="w-100">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-gray.png" class="w-100">
+                                    </div>
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-gray.png" class="w-100">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-gray.png" class="w-100">
+                                    </div>
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-gray.png" class="w-100">
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="font-style-italic text-muted font-size-12 py-2">Upload an authenticated Identification document and a selfie to verify your profile for full benefits</div>
-
-                            <div class="text-violet font-size-14">IDbelgeadi.jpeg</div>
-                            <div class="text-violet font-size-14">Selfiebelgeadı.jpeg</div>
-
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-success mt-4">Save Changes</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-xl-6 col-lg-6 mb-4">
-                    <div class="bg-light border-radius-20px p-3 mb-4">
-                        <h2 class="mb-3">Platform Information</h2>
-
-                        <div class="font-weight-700 font-size-16 text-indigo">Instagram</div>
-
-                        <div class="row mb-3">
-                            <div class="col-11">
-                                <div class="bg-light border-radius-10px border-3 p-2">
-                                    <div class="text-indigo text-truncate">www.instagram.com/username</div>
+                            <div class="col-lg-4 mb-lg-0 mb-3">
+                                <div class="d-flex justify-content-between border-bottom">
+                                    <h3>Borders</h3>
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination mb-0">
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-gray.png" class="w-100">
+                                    </div>
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-gray.png" class="w-100">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-gray.png" class="w-100">
+                                    </div>
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-color.png" class="w-100">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-color.png" class="w-100">
+                                    </div>
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-gray.png" class="w-100">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-gray.png" class="w-100">
+                                    </div>
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-gray.png" class="w-100">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-1 text-end align-self-center">
-                                <span class="icon-delete"></span>
-                            </div>
-                        </div>
-
-                        <div class="font-weight-700 font-size-16 text-indigo">Facebook</div>
-
-                        <div class="row mb-3">
-                            <div class="col-11">
-                                <div class="bg-light border-radius-10px border-3 p-2">
-                                    <div class="text-indigo text-truncate">www.facebook.com/username</div>
+                            <div class="col-lg-4">
+                                <div class="d-flex justify-content-between border-bottom">
+                                    <h3>Banners</h3>
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination mb-0">
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-gray.png" class="w-100">
+                                    </div>
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-color.png" class="w-100">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-gray.png" class="w-100">
+                                    </div>
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-color.png" class="w-100">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-gray.png" class="w-100">
+                                    </div>
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-gray.png" class="w-100">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-gray.png" class="w-100">
+                                    </div>
+                                    <div class="col-6 p-1">
+                                        <img src="images/image-color.png" class="w-100">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-1 text-end align-self-center">
-                                <span class="icon-delete"></span>
+                        </div>
+                        <div class="row d-flex justify-content-end">
+                            <div class="col-lg-3">
+                                <select class="selectpicker w-100" multiple title="Download selected">
+                                    <option>Facebook</option>
+                                    <option>Instagram</option>
+                                    <option>Twitter</option>
+                                    <option>Linkedin</option>
+                                    <option>Story</option>
+                                </select>
                             </div>
-                        </div>
-
-                        <div class="font-weight-700 font-size-16 text-indigo">Youtube</div>
-
-                        <div class="row">
-                            <div class="col-11">
-                                <div class="bg-light border-radius-10px border-3 p-2">
-                                    <div class="text-indigo text-truncate">www.youtube.com/channelname</div>
-                                </div>
-                            </div>
-                            <div class="col-1 text-end align-self-center">
-                                <span class="icon-delete"></span>
-                            </div>
-                        </div>
-
-                        <div class="mb-4 pt-80px">
-                            <label for="inputSocialPlatform" class="form-label">Add New Social Media Platform</label>
-                            <input type="text" class="form-control" id="inputSocialPlatform" placeholder="Profile page URL">
-                        </div>
-
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Add</button>
-                        </div>
-                    </div>
-
-                    <div class="bg-light border-radius-20px p-3">
-                        <h2 class="mb-3">Payment Information</h2>
-
-                        <div class="mb-4">
-                            <label for="inputEmailAddress" class="form-label">Paypall E-mail address</label>
-                            <input type="email" class="form-control" id="inputEmailAddress" aria-describedby="emailHelp">
-                        </div>
-
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Save</button>
                         </div>
                     </div>
                 </div>
@@ -391,6 +384,9 @@
 <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
 <script src="js/scripts.js"></script>
 
 </html>

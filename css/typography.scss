@@ -47,12 +47,16 @@
     font-style: italic;
 }
 
+.bg-primary {
+    background-color: $indigo-color!important;
+}
+
 .bg-info {
     background-color: $ghost-white-color!important;
 }
 
 .bg-light {
-    background-color: $white-smoke-color;
+    background-color: $white-smoke-color!important;
 }
 
 .bg-secondary {
@@ -60,7 +64,7 @@
 }
 
 .bg-danger {
-    background-color: $crimson-color;
+    background-color: $crimson-color!important;
 }
 
 .bg-success {

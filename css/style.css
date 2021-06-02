@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "./bootstrap.min.css";
 @import "./bootstrap-select.min.css";
 @import "./daterangepicker.css";
@@ -50,12 +51,16 @@
   font-style: italic;
 }
 
+.bg-primary {
+  background-color: #1A205A !important;
+}
+
 .bg-info {
   background-color: #E3E4FF !important;
 }
 
 .bg-light {
-  background-color: #F6F6FC;
+  background-color: #F6F6FC !important;
 }
 
 .bg-secondary {
@@ -63,7 +68,7 @@
 }
 
 .bg-danger {
-  background-color: #E84358;
+  background-color: #E84358 !important;
 }
 
 .bg-success {
@@ -149,6 +154,11 @@ h1 {
 h2 {
   font-size: 22px;
   color: #60B355 !important;
+}
+
+h3 {
+  font-size: 16px;
+  color: #6266EA !important;
 }
 
 .wrapper {
@@ -452,11 +462,39 @@ a[data-toggle=collapse] {
   border-radius: 5px;
 }
 
-table td {
+table .transactions-table td {
   border-bottom: none;
   font-weight: 500;
   font-size: 16px;
   color: #1A205A;
+}
+
+.table > thead {
+  border-bottom: 2px solid #E1E1EE !important;
+}
+
+table.table-default {
+  color: #6266EA !important;
+}
+table.table-default td {
+  font-weight: 400;
+  font-size: 14px;
+  color: #1A205A;
+  border-bottom: none;
+}
+
+.table-primary {
+  --bs-table-bg: #E1E1EE!important;
+  color: #1A205A !important;
+  border-radius: 5px;
+}
+
+tbody:before {
+  content: "";
+  display: block;
+  line-height: 1em;
+  color: transparent;
+  margin: 14px;
 }
 
 .list-group-item {
@@ -603,6 +641,11 @@ textarea.form-control {
   background-color: #60B355;
 }
 
+.dropdown-item.selected {
+  background-color: #60B355;
+  color: #FFFFFF !important;
+}
+
 .transactions-table.table > thead {
   background: #E7E8FA;
   border-radius: 5px;
@@ -688,6 +731,71 @@ textarea.form-control {
   width: 22px;
   height: 22px;
   background: url("../images/date-period-icon.svg") no-repeat;
+}
+
+.daterange-position::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  left: -24px;
+  width: 22px;
+  height: 22px;
+  background: url("../images/date-period-icon.svg") no-repeat;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #E1E1EE !important;
+}
+
+.accordion-flush .accordion-item {
+  border-radius: 10px;
+  border-bottom: 0;
+  border-top: 0;
+  margin-bottom: 4px;
+}
+.accordion-flush .accordion-item .accordion-button {
+  background: #F6F6FC;
+  border: 1px solid #E1E1EE;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 16px;
+  color: #1A205A;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 9px 12px;
+}
+.accordion-flush .accordion-item .accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-flush .accordion-item .accordion-button::after {
+  margin-left: 27px;
+  font-size: 20px;
+  color: #ACACC8;
+  background-image: none;
+  content: "+";
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.accordion-flush .accordion-item .accordion-button.collapsed {
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+.accordion-flush .accordion-item .accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+.accordion-flush .accordion-item .accordion-button:not(.collapsed)::after {
+  background-image: none;
+  content: "−";
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.accordion-flush .accordion-item .accordion-body {
+  background: #F6F6FC;
+  border: 1px solid #E1E1EE;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

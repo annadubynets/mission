@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+
+        <button id="sidebarCollapse" class="navbar-toggler toggle-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent22" aria-controls="navbarSupportedContent22" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="animated-icon"><span></span><span></span><span></span></div>
+        </button>
+
+        <div class="sidebar-header expanded-view-only">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="logo" class="d-inline-block align-text-top">
+            </a>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li>
+                <a href="index.html">
+                    <span class="icon-dashboard sidebar-icon align-middle"></span>
+                    <span class="ps-4 expanded-view-only">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="information.html">
+                    <span class="icon-information sidebar-icon align-middle"></span>
+                    <span class="ps-4 expanded-view-only">Information</span>
+                </a>
+            </li>
+            <li>
+                <a href="referral-links.html">
+                    <span class="icon-links sidebar-icon align-middle"></span>
+                    <span class="ps-4 expanded-view-only">Referral Links</span>
+                </a>
+            </li>
+            <li>
+                <a href="widgets.html">
+                    <span class="icon-widgets sidebar-icon align-middle"></span>
+                    <span class="ps-4 expanded-view-only">Widgets</span>
+                </a>
+            </li>
+            <li>
+                <a href="transactions.html">
+                    <span class="icon-transaction sidebar-icon align-middle"></span>
+                    <span class="ps-4 expanded-view-only">Transactions
+                        <span class="badge bg-danger text-white rounded-circle ms-2">1</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="subscribers.html">
+                    <span class="icon-user sidebar-icon align-middle"></span>
+                    <span class="ps-4 expanded-view-only">My Subscribers</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="earnings.html">
+                    <span class="icon-earnings sidebar-icon align-middle"></span>
+                    <span class="ps-4 expanded-view-only">My Earnings</span>
+                </a>
+            </li>
+            <li>
+                <a href="useful-materials.html">
+                    <span class="icon-materials sidebar-icon align-middle"></span>
+                    <span class="ps-4 expanded-view-only">Useful Materials</span>
+                </a>
+            </li>
+            <li>
+                <a href="analytics.html">
+                    <span class="icon-analytics sidebar-icon align-middle"></span>
+                    <spaan class="ps-4 expanded-view-only">Analytics</spaan>
+                </a>
+            </li>
+        </ul>
+
+        <div class="text-center m-5 expanded-view-only">
+            <a href="#" class="btn btn-primary">Log Out</a>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content">
+        <div class="container">
+            <div class="row navbar-wrapper">
+                <div class="col-lg-8 order-lg-0 order-1 mt-lg-0 mt-4">
+                    <h1>My Earnings
+                        <span class="font-weight-400 font-size-16 text-white d-block">Your current finances</span>
+                    </h1>
+                </div>
+                <div class="col-lg-4 order-lg-1 order-0 d-flex justify-content-between align-self-center">
+                    <div class="dropdown navbar-dropdown align-self-center d-block d-lg-none">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            My Earnings
+                            </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a href="index.html" class="dropdown-item">
+                                    <span class="icon-dashboard sidebar-icon align-middle"></span>
+                                    <span class="ps-4">Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="information.html" class="dropdown-item">
+                                    <span class="icon-information sidebar-icon align-middle"></span>
+                                    <span class="ps-4">Informartion</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="referral-links.html" class="dropdown-item">
+                                    <span class="icon-links sidebar-icon align-middle"></span>
+                                    <span class="ps-4 expanded-view-only">Referral Links</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="widgets.html" class="dropdown-item">
+                                    <span class="icon-widgets sidebar-icon align-middle"></span>
+                                    <span class="ps-4 expanded-view-only">Widgets</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="transactions.html" class="dropdown-item">
+                                    <span class="icon-transaction sidebar-icon align-middle"></span>
+                                    <span class="ps-4 expanded-view-only">Transactions
+                                            <span class="badge bg-danger text-white rounded-circle ms-2">1</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="subscribers.html" class="dropdown-item">
+                                    <span class="icon-user sidebar-icon align-middle"></span>
+                                    <span class="ps-4 expanded-view-only">My Subscribers</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="useful-materials.html" class="dropdown-item">
+                                    <span class="icon-materials sidebar-icon align-middle"></span>
+                                    <span class="ps-4 expanded-view-only">Useful Materials</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="analytics.html" class="dropdown-item">
+                                    <span class="icon-analytics sidebar-icon align-middle"></span>
+                                    <spaan class="ps-4 expanded-view-only">Analytics</spaan>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex ms-auto">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                <div class="notifications-style">
+                                    <img src="images/notification-icon.svg" style="transform: rotate(18.04deg)">
+                                    <span class="badge position-absolute bg-danger text-white rounded-circle ms-2" style="top: 15px; left: -15px;">1</span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu" style="min-width: 342px;">
+                                <li class="dropdown-item d-flex justify-content-between px-3 border-bottom">
+                                    <div class="font-size-14">Notification 1</div>
+                                    <div class="font-size-14">
+                                        <span>7d</span>
+                                        <span class="icon-delete ps-4"></span>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item d-flex justify-content-between px-3 border-bottom">
+                                    <div class="font-size-14">Notification 1</div>
+                                    <div class="font-size-14">
+                                        <span>7d</span>
+                                        <span class="icon-delete ps-4"></span>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item d-flex justify-content-between px-3 border-bottom">
+                                    <div class="font-size-14">Notification 1</div>
+                                    <div class="font-size-14">
+                                        <span>7d</span>
+                                        <span class="icon-delete ps-4"></span>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item d-flex justify-content-between px-3 border-bottom">
+                                    <div class="font-size-14">Notification 1</div>
+                                    <div class="font-size-14">
+                                        <span>7d</span>
+                                        <span class="icon-delete ps-4"></span>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item d-flex justify-content-between px-3 border-bottom">
+                                    <div class="font-size-14">Notification 1</div>
+                                    <div class="font-size-14">
+                                        <span>7d</span>
+                                        <span class="icon-delete ps-4"></span>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item d-flex justify-content-between px-3 border-bottom">
+                                    <div class="font-size-14">Notification 1</div>
+                                    <div class="font-size-14">
+                                        <span>7d</span>
+                                        <span class="icon-delete ps-4"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="align-self-center ms-2">
+                            <img class="user-img" src="images/user.svg" alt="user">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xxl-4 col-xl-6 col-lg-6 mb-4">
+                    <div class="bg-light border-radius-20px p-3 mb-4">
+                        <h2 class="mb-3">My Status
+                            <span class="font-weight-400 font-size-16 text-purple">May 2021</span>
+                        </h2>
+                        <div class="text-lavander font-size-20">Klimanjero
+                            <span class="text-success">15%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-lg-6 mb-lg-0 mb-3">
+                                <div class="border-radius-10px border-1 p-1">
+                                    <div class="font-weight-500 text-muted font-size-16">Total Sales</div>
+                                    <div class="font-weight-500 text-violet font-size-20">12,020 $</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="border-radius-10px border-1 p-1">
+                                    <div class="font-weight-500 text-muted font-size-16">My Earning</div>
+                                    <div class="font-weight-500 text-violet font-size-20">1,240 $</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-success font-size-14 font-style-italic mt-3">Eligable for payment
+                            <span><img src="images/check.svg"></span>
+                        </div>
+
+                        <div class="text-violet font-size-18 font-weight-500 mt-3">Next Payout Date:
+                            <span class="text-indigo font-weight-400">01.04.2021</span>
+                        </div>
+                    </div>
+                    <div class="bg-light border-radius-20px p-3">
+                        <div class="text-violet font-size-18 font-weight-500 mt-3">Period</div>
+                        <div class="daterange-style position-relative">
+                            <input type="text" name="daterange" value="02/11/2021 - 03/11/2021" class="form-control" />
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-lg-6 mb-lg-0 mb-3">
+                                <div class="border-radius-10px border-1 p-1">
+                                    <div class="font-weight-500 text-muted font-size-16">Period Sales</div>
+                                    <div class="font-weight-500 text-violet font-size-20">12,020 $</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="border-radius-10px border-1 p-1">
+                                    <div class="font-weight-500 text-muted font-size-16">Period Earning</div>
+                                    <div class="font-weight-500 text-violet font-size-20">1,240 $</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-6 col-lg-6 mb-4">
+                    <div class="bg-light border-radius-20px p-3">
+                        <div class="row">
+                            <div class="col-5 align-self-center">
+                                <h2 class="mb-3">Previous Earnings</h2>
+                            </div>
+                            <div class="col-7 text-end">
+                                <select class="selectpicker">
+                                    <option>2021</option>
+                                    <option>2020</option>
+                                    <option>2019</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <div class="text-start">
+                                            January
+                                        </div>
+                                        <div class="text-end ms-auto">
+                                            <div class="text-violet">$1,000</div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Total Sales: <span class="font-weight-500 text-success">$1,000</span></div>
+                                                <div class="font-size-14 text-secondary">Status: <span class="font-weight-500 text-success">Fuji</span></div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Comission Rate: <span class="font-weight-500 text-success">10%</span></div>
+                                                <div class="font-size-14 text-secondary">Earning: <span class="font-weight-500 text-success">$100</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        <div class="text-start">
+                                            February
+                                        </div>
+                                        <div class="text-end ms-auto">
+                                            <div class="text-violet">$1,000</div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Total Sales: <span class="font-weight-500 text-success">$1,000</span></div>
+                                                <div class="font-size-14 text-secondary">Status: <span class="font-weight-500 text-success">Fuji</span></div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Comission Rate: <span class="font-weight-500 text-success">10%</span></div>
+                                                <div class="font-size-14 text-secondary">Earning: <span class="font-weight-500 text-success">$100</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        <div class="text-start">
+                                            March
+                                        </div>
+                                        <div class="text-end ms-auto">
+                                            <div class="text-violet">$1,000</div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Total Sales: <span class="font-weight-500 text-success">$1,000</span></div>
+                                                <div class="font-size-14 text-secondary">Status: <span class="font-weight-500 text-success">Fuji</span></div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Comission Rate: <span class="font-weight-500 text-success">10%</span></div>
+                                                <div class="font-size-14 text-secondary">Earning: <span class="font-weight-500 text-success">$100</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                        <div class="text-start">
+                                            April
+                                        </div>
+                                        <div class="text-end ms-auto">
+                                            <div class="text-violet">$1,000</div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Total Sales: <span class="font-weight-500 text-success">$1,000</span></div>
+                                                <div class="font-size-14 text-secondary">Status: <span class="font-weight-500 text-success">Fuji</span></div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Comission Rate: <span class="font-weight-500 text-success">10%</span></div>
+                                                <div class="font-size-14 text-secondary">Earning: <span class="font-weight-500 text-success">$100</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFive">
+                                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                        <div class="text-start">
+                                            May
+                                        </div>
+                                        <div class="text-end ms-auto">
+                                            <div class="text-violet">$1,000</div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Total Sales: <span class="font-weight-500 text-success">$1,000</span></div>
+                                                <div class="font-size-14 text-secondary">Status: <span class="font-weight-500 text-success">Fuji</span></div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Comission Rate: <span class="font-weight-500 text-success">10%</span></div>
+                                                <div class="font-size-14 text-secondary">Earning: <span class="font-weight-500 text-success">$100</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingSix">
+                                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                        <div class="text-start">
+                                            June
+                                        </div>
+                                        <div class="text-end ms-auto">
+                                            <div class="text-violet">$1,000</div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Total Sales: <span class="font-weight-500 text-success">$1,000</span></div>
+                                                <div class="font-size-14 text-secondary">Status: <span class="font-weight-500 text-success">Fuji</span></div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Comission Rate: <span class="font-weight-500 text-success">10%</span></div>
+                                                <div class="font-size-14 text-secondary">Earning: <span class="font-weight-500 text-success">$100</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingSeven">
+                                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                        <div class="text-start">
+                                            July
+                                        </div>
+                                        <div class="text-end ms-auto">
+                                            <div class="text-violet">$1,000</div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Total Sales: <span class="font-weight-500 text-success">$1,000</span></div>
+                                                <div class="font-size-14 text-secondary">Status: <span class="font-weight-500 text-success">Fuji</span></div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Comission Rate: <span class="font-weight-500 text-success">10%</span></div>
+                                                <div class="font-size-14 text-secondary">Earning: <span class="font-weight-500 text-success">$100</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingEight">
+                                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                                        <div class="text-start">
+                                            August
+                                        </div>
+                                        <div class="text-end ms-auto">
+                                            <div class="text-violet">$1,000</div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Total Sales: <span class="font-weight-500 text-success">$1,000</span></div>
+                                                <div class="font-size-14 text-secondary">Status: <span class="font-weight-500 text-success">Fuji</span></div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Comission Rate: <span class="font-weight-500 text-success">10%</span></div>
+                                                <div class="font-size-14 text-secondary">Earning: <span class="font-weight-500 text-success">$100</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingNine">
+                                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                                        <div class="text-start">
+                                            September
+                                        </div>
+                                        <div class="text-end ms-auto">
+                                            <div class="text-violet">$1,000</div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Total Sales: <span class="font-weight-500 text-success">$1,000</span></div>
+                                                <div class="font-size-14 text-secondary">Status: <span class="font-weight-500 text-success">Fuji</span></div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Comission Rate: <span class="font-weight-500 text-success">10%</span></div>
+                                                <div class="font-size-14 text-secondary">Earning: <span class="font-weight-500 text-success">$100</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTen">
+                                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                                        <div class="text-start">
+                                            October
+                                        </div>
+                                        <div class="text-end ms-auto">
+                                            <div class="text-violet">$1,000</div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Total Sales: <span class="font-weight-500 text-success">$1,000</span></div>
+                                                <div class="font-size-14 text-secondary">Status: <span class="font-weight-500 text-success">Fuji</span></div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Comission Rate: <span class="font-weight-500 text-success">10%</span></div>
+                                                <div class="font-size-14 text-secondary">Earning: <span class="font-weight-500 text-success">$100</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingEleven">
+                                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                                        <div class="text-start">
+                                            November
+                                        </div>
+                                        <div class="text-end ms-auto">
+                                            <div class="text-violet">$1,000</div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Total Sales: <span class="font-weight-500 text-success">$1,000</span></div>
+                                                <div class="font-size-14 text-secondary">Status: <span class="font-weight-500 text-success">Fuji</span></div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Comission Rate: <span class="font-weight-500 text-success">10%</span></div>
+                                                <div class="font-size-14 text-secondary">Earning: <span class="font-weight-500 text-success">$100</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwelve">
+                                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+                                        <div class="text-start">
+                                            December
+                                        </div>
+                                        <div class="text-end ms-auto">
+                                            <div class="text-violet">$1,000</div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Total Sales: <span class="font-weight-500 text-success">$1,000</span></div>
+                                                <div class="font-size-14 text-secondary">Status: <span class="font-weight-500 text-success">Fuji</span></div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Comission Rate: <span class="font-weight-500 text-success">10%</span></div>
+                                                <div class="font-size-14 text-secondary">Earning: <span class="font-weight-500 text-success">$100</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingtThirteen">
+                                    <button class="accordion-button bg-primary collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThirteen" aria-expanded="false" aria-controls="flush-collapseThirteen">
+                                        <div class="text-start text-white">
+                                            TOTAL
+                                        </div>
+                                        <div class="text-end ms-auto">
+                                            <div class="text-white">$12,000</div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThirteen" class="accordion-collapse collapse" aria-labelledby="flush-headingThirteen" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Total Sales: <span class="font-weight-500 text-success">$1,000</span></div>
+                                                <div class="font-size-14 text-secondary">Status: <span class="font-weight-500 text-success">Fuji</span></div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="font-size-14 text-secondary">Comission Rate: <span class="font-weight-500 text-success">10%</span></div>
+                                                <div class="font-size-14 text-secondary">Earning: <span class="font-weight-500 text-success">$100</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script src="js/scripts.js"></script>
+
+</html>

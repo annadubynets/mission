@@ -31,7 +31,7 @@
                     <span class="ps-4 expanded-view-only">Dashboard</span>
                 </a>
             </li>
-            <li class="active">
+            <li>
                 <a href="information.html">
                     <span class="icon-information sidebar-icon align-middle"></span>
                     <span class="ps-4 expanded-view-only">Information</span>
@@ -75,7 +75,7 @@
                     <span class="ps-4 expanded-view-only">Useful Materials</span>
                 </a>
             </li>
-            <li>
+            <li class="active">
                 <a href="analytics.html">
                     <span class="icon-analytics sidebar-icon align-middle"></span>
                     <spaan class="ps-4 expanded-view-only">Analytics</spaan>
@@ -93,20 +93,26 @@
         <div class="container">
             <div class="row navbar-wrapper">
                 <div class="col-lg-8 order-lg-0 order-1 mt-lg-0 mt-4">
-                    <h1>Informartion
-                        <span class="font-weight-400 font-size-16 text-white d-block">Manage your profile</span>
+                    <h1>Analytics
+                        <span class="font-weight-400 font-size-16 text-white d-block">Don’t miss any information</span>
                     </h1>
                 </div>
                 <div class="col-lg-4 order-lg-1 order-0 d-flex justify-content-between align-self-center">
                     <div class="dropdown navbar-dropdown align-self-center d-block d-lg-none">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Informartion
+                            Analytics
                             </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
                                 <a href="index.html" class="dropdown-item">
                                     <span class="icon-dashboard sidebar-icon align-middle"></span>
                                     <span class="ps-4">Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="information.html" class="dropdown-item">
+                                    <span class="icon-information sidebar-icon align-middle"></span>
+                                    <span class="ps-4">Informartion</span>
                                 </a>
                             </li>
                             <li>
@@ -145,12 +151,6 @@
                                 <a href="useful-materials.html" class="dropdown-item">
                                     <span class="icon-materials sidebar-icon align-middle"></span>
                                     <span class="ps-4 expanded-view-only">Useful Materials</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="analytics.html" class="dropdown-item">
-                                    <span class="icon-analytics sidebar-icon align-middle"></span>
-                                    <spaan class="ps-4 expanded-view-only">Analytics</spaan>
                                 </a>
                             </li>
                         </ul>
@@ -217,167 +217,153 @@
             </div>
 
             <div class="row">
-                <div class="col-xxl-4 col-xl-6 col-lg-6 mb-4">
-                    <div class="bg-light border-radius-20px p-3 h-100">
-                        <h2 class="mb-3">Personal Information</h2>
-
-                        <form>
-                            <div class="mb-3">
-                                <label for="inputName" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="inputName">
-                            </div>
-                            <div class="mb-3">
-                                <label for="inputSurname" class="form-label">Surname</label>
-                                <input type="text" class="form-control" id="inputSurname">
-                            </div>
-                            <div class="mb-3">
-                                <label for="inputBirthday" class="form-label">Birthday</label>
-                                <input type="date" class="form-control" id="inputBirthday">
-                            </div>
-                            <div class="mb-3">
-                                <label for="inputCountry" class="form-label">Country</label>
-                                <input type="text" class="form-control" id="inputCountry">
-                            </div>
-                            <div class="mb-3">
-                                <label for="inputEmail" class="form-label">E-mail</label>
-                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-3">
-                                <label for="inputAddress" class="form-label">Address</label>
-                                <textarea class="form-control" id="inputAddress" rows="3"></textarea>
-                            </div>
-
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verificationModal">
-                                Verify your Profile
-                              </button>
-                            <div class="modal fade" id="verificationModal" tabindex="-1" aria-labelledby="verificationModallLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h2 class="modal-title" id="verificationModalLabel">Verification</h2>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-
-                                            <div class="row mb-2 verification-item">
-                                                <div class="col-lg-12">
-                                                    <div class="bg-info border-radius-10px p-3 d-flex justify-content-between">
-                                                        <div class="d-flex">
-                                                            <img src="images/seflie.svg" class="pe-2">
-                                                            <div class="align-self-center">
-                                                                <p class="text-violet font-weight-500 font-size-16 mb-0">Selfie with ID</p>
-                                                                <p class="text-muted font-size-14 mb-0 file-name d-none"></p>
-                                                                <p class="text-success font-size-14 mb-0 upload-status">Not uploaded</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="align-self-center">
-                                                            <input type="file" name="file-selfie" multiple=false class="file-upload-input" style="display: none;" accept='image/*'>
-                                                            <span class="icon-edit btn-select-file cursor-pointer"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row verification-item">
-                                                <div class="col-lg-12">
-                                                    <div class="bg-info border-radius-10px p-3 d-flex justify-content-between">
-                                                        <div class="d-flex">
-                                                            <img src="images/identification-document.svg" class="pe-2">
-                                                            <div class="align-self-center">
-                                                                <p class="text-violet font-weight-500 font-size-16 mb-0">Identification Document</p>
-                                                                <p class="text-muted font-size-14 mb-0 file-name d-none"></p>
-                                                                <p class="text-success font-size-14 mb-0 upload-status">Not uploaded</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="align-self-center">
-                                                            <input type="file" name="file-id-doc" multiple=false class="file-upload-input" style="display: none;" accept='image/*,application/pdf'>
-                                                            <span class="icon-edit btn-select-file cursor-pointer"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary">Submit</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="font-style-italic text-muted font-size-12 py-2">Upload an authenticated Identification document and a selfie to verify your profile for full benefits</div>
-
-                            <div class="text-violet font-size-14">IDbelgeadi.jpeg</div>
-                            <div class="text-violet font-size-14">Selfiebelgeadı.jpeg</div>
-
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-success mt-4">Save Changes</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-xl-6 col-lg-6 mb-4">
-                    <div class="bg-light border-radius-20px p-3 mb-4">
-                        <h2 class="mb-3">Platform Information</h2>
-
-                        <div class="font-weight-700 font-size-16 text-indigo">Instagram</div>
-
-                        <div class="row mb-3">
-                            <div class="col-11">
-                                <div class="bg-light border-radius-10px border-3 p-2">
-                                    <div class="text-indigo text-truncate">www.instagram.com/username</div>
-                                </div>
-                            </div>
-                            <div class="col-1 text-end align-self-center">
-                                <span class="icon-delete"></span>
-                            </div>
-                        </div>
-
-                        <div class="font-weight-700 font-size-16 text-indigo">Facebook</div>
-
-                        <div class="row mb-3">
-                            <div class="col-11">
-                                <div class="bg-light border-radius-10px border-3 p-2">
-                                    <div class="text-indigo text-truncate">www.facebook.com/username</div>
-                                </div>
-                            </div>
-                            <div class="col-1 text-end align-self-center">
-                                <span class="icon-delete"></span>
-                            </div>
-                        </div>
-
-                        <div class="font-weight-700 font-size-16 text-indigo">Youtube</div>
-
-                        <div class="row">
-                            <div class="col-11">
-                                <div class="bg-light border-radius-10px border-3 p-2">
-                                    <div class="text-indigo text-truncate">www.youtube.com/channelname</div>
-                                </div>
-                            </div>
-                            <div class="col-1 text-end align-self-center">
-                                <span class="icon-delete"></span>
-                            </div>
-                        </div>
-
-                        <div class="mb-4 pt-80px">
-                            <label for="inputSocialPlatform" class="form-label">Add New Social Media Platform</label>
-                            <input type="text" class="form-control" id="inputSocialPlatform" placeholder="Profile page URL">
-                        </div>
-
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Add</button>
-                        </div>
-                    </div>
-
+                <div class="col-12">
                     <div class="bg-light border-radius-20px p-3">
-                        <h2 class="mb-3">Payment Information</h2>
-
-                        <div class="mb-4">
-                            <label for="inputEmailAddress" class="form-label">Paypall E-mail address</label>
-                            <input type="email" class="form-control" id="inputEmailAddress" aria-describedby="emailHelp">
+                        <div class="row mb-4">
+                            <div class="col-lg-3 text-start align-self-center mb-lg-0 mb-3">
+                                <h2 class="mb-0">Analytics</h2>
+                            </div>
+                            <div class="col-lg-3 mb-lg-0 mb-3">
+                                <select class="selectpicker w-100" title="Select Breakdown">
+                                    <option>Theme 2</option>
+                                    <option>Theme 3</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 mb-lg-0 mb-3">
+                                <select class="selectpicker w-100" title="Custom Date">
+                                    <option>Last 24 Hours</option>
+                                    <option>Last 7 Days</option>
+                                    <option>Last Month</option>
+                                    <option>Last Year</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 mb-lg-0 mb-3 d-flex justify-content-lg-end justify-content-start">
+                                <img src="images/date-period-icon.svg">
+                                <div class="position-relative">
+                                    <input type="text" name="daterange" value="02/11/2021 - 03/11/2021" class="form-control" />
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Save</button>
+                        <div class="table-responsive">
+                            <table class="table table-default" style="height: 100%;">
+                                <thead class="text-center">
+                                    <tr class="align-middle">
+                                        <th scope="col">Source</th>
+                                        <th scope="col">Click</th>
+                                        <th scope="col">Add to Cart</th>
+                                        <th scope="col">Purchase</th>
+                                        <th scope="col">Conversion Value</th>
+                                        <th scope="col">Revenue</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-center">
+                                    <tr class="table-primary">
+                                        <td class="text-start"><span class="font-weight-500"><span class="pe-1"><img src="images/level-right.svg"></span>Instagram Story</span>
+                                        </td>
+                                        <td><span class="font-weight-500">48</span></td>
+                                        <td><span class="font-weight-500">4</span></td>
+                                        <td><span class="font-weight-500">2</span></td>
+                                        <td><span class="font-weight-500">$ 34.10</span></td>
+                                        <td><span class="font-weight-500">$ 3.41</span></td>
+                                        <td>
+                                            <button type="button" class="btn p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="icon-dropdown-icon dropdown-icon-active ps-1"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Male</td>
+                                        <td>28</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>$ 14.10</td>
+                                        <td>$ 1.41</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Female</td>
+                                        <td>20</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>$ 20.00</td>
+                                        <td>$ 2.00</td>
+                                    </tr>
+
+                                    <tr class="table-primary">
+                                        <td class="text-start"><span class="font-weight-500"><span class="pe-1"><img src="images/level-right.svg"></span>Instagram Post</span>
+                                        </td>
+                                        <td><span class="font-weight-500">48</span></td>
+                                        <td><span class="font-weight-500">4</span></td>
+                                        <td><span class="font-weight-500">2</span></td>
+                                        <td><span class="font-weight-500">$ 34.10</span></td>
+                                        <td><span class="font-weight-500">$ 3.41</span></td>
+                                        <td>
+                                            <button type="button" class="btn p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="icon-dropdown-icon dropdown-icon-active ps-1"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Male</td>
+                                        <td>28</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>$ 14.10</td>
+                                        <td>$ 1.41</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Female</td>
+                                        <td>20</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>$ 20.00</td>
+                                        <td>$ 2.00</td>
+                                    </tr>
+
+                                    <tr class="table-primary">
+                                        <td class="text-start"><span class="font-weight-500 text-uppercase"><span class="pe-1"><img src="images/level-right.svg"></span>Total</span>
+                                        </td>
+                                        <td><span class="font-weight-500">96</span></td>
+                                        <td><span class="font-weight-500">8</span></td>
+                                        <td><span class="font-weight-500">4</span></td>
+                                        <td><span class="font-weight-500">$ 68.20</span></td>
+                                        <td><span class="font-weight-500">$ 6.82</span></td>
+                                        <td>
+                                            <button type="button" class="btn p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="icon-dropdown-icon dropdown-icon-active ps-1"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Male</td>
+                                        <td>56</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>$ 28.10</td>
+                                        <td>$ 2.82</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Female</td>
+                                        <td>40</td>
+                                        <td>6</td>
+                                        <td>2</td>
+                                        <td>$ 40.00</td>
+                                        <td>$ 4.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -391,6 +377,9 @@
 <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
 <script src="js/scripts.js"></script>
 
 </html>
