@@ -492,7 +492,7 @@ table.table-default td {
   border-bottom: none;
 }
 
-.table-primary {
+.table-secondary {
   --bs-table-bg: #E1E1EE!important;
   color: #1A205A !important;
   border-radius: 5px;
