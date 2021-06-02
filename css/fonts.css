@@ -36,8 +36,8 @@
 
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?n0bxew');
-    src: url('../fonts/icomoon.eot?n0bxew#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?n0bxew') format('truetype'), url('../fonts/icomoon.woff?n0bxew') format('woff'), url('../fonts/icomoon.svg?n0bxew#icomoon') format('svg');
+    src: url('../fonts/icomoon.eot?4jkqi');
+    src: url('../fonts/icomoon.eot?4jkqi#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?4jkqi') format('truetype'), url('../fonts/icomoon.woff?4jkqi') format('woff'), url('../fonts/icomoon.svg?4jkqi#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -56,6 +56,11 @@
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-referrals:before {
+    content: "\e90f";
+    color: #fff;
 }
 
 .icon-delete:before {
@@ -118,13 +123,13 @@
     color: #fff;
 }
 
+.icon-level-right:before {
+    content: "\e90e";
+}
+
 .icon-edit:before {
     content: "\e90d";
     color: #a9abe4;
-}
-
-.icon-angle-down-solid:before {
-    content: "\e90c";
 }
 
 .icon-arrow-right2:before {
