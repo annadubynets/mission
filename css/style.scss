@@ -357,7 +357,7 @@ table .transactions-table {
     }
 }
 
-.table>thead {
+table.table-default>thead {
     border-bottom: 2px solid #E1E1EE!important;
 }
 
@@ -369,6 +369,10 @@ table.table-default {
         color: $indigo-color;
         border-bottom: none;
     }
+}
+
+.table>:not(:last-child)>:last-child>* {
+    border-bottom: none;
 }
 
 .table-primary {

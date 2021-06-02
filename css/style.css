@@ -469,7 +469,7 @@ table .transactions-table td {
   color: #1A205A;
 }
 
-.table > thead {
+table.table-default > thead {
   border-bottom: 2px solid #E1E1EE !important;
 }
 
@@ -480,6 +480,10 @@ table.table-default td {
   font-weight: 400;
   font-size: 14px;
   color: #1A205A;
+  border-bottom: none;
+}
+
+.table > :not(:last-child) > :last-child > * {
   border-bottom: none;
 }
 
