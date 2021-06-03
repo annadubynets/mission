@@ -416,8 +416,7 @@ a[data-toggle=collapse] {
   font-size: 16px;
   line-height: 30px;
   text-align: center;
-  padding: 5px 52px;
-  min-width: 165px;
+  padding: 5px 26px;
 }
 .btn-success:hover {
   box-shadow: 0px 3px 12px #60B355;
