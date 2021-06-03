@@ -278,6 +278,20 @@ a[data-toggle=collapse] {
   transform: translateY(-50%);
 }
 
+.dropdown-menu.notifications {
+  min-width: 342px;
+}
+
+@media (max-width: 567px) {
+  .dropdown-menu.notifications {
+    transform: none !important;
+    position: fixed !important;
+    left: 12px !important;
+    right: 12px !important;
+    top: 94px !important;
+    inset: none !important;
+  }
+}
 .navbar-toggler.toggle-button {
   background: transparent !important;
   border: none !important;
