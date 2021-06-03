@@ -513,6 +513,13 @@ textarea.form-control {
     border-radius: 10px;
 }
 
+.selectpicker-custom-earnings+.btn-light {
+    background: #E1E1EE!important;
+    color: $indigo-color!important;
+    border-radius: 10px;
+    border: none!important;
+}
+
 .bootstrap-select {
     .dropdown-menu .dropdown-item {
         font-weight: 400;
