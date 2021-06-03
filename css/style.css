@@ -278,10 +278,6 @@ a[data-toggle=collapse] {
   transform: translateY(-50%);
 }
 
-.dropstart .dropdown-toggle-split::before {
-  display: none;
-}
-
 .navbar-toggler.toggle-button {
   background: transparent !important;
   border: none !important;
