@@ -617,6 +617,12 @@ textarea.form-control {
   background: #F5F6FC;
 }
 
+.selectpicker-custom + .btn-light {
+  background: #6266EA !important;
+  color: #FFFFFF !important;
+  border-radius: 10px;
+}
+
 .bootstrap-select .dropdown-menu .dropdown-item {
   font-weight: 400;
   font-size: 16px;
