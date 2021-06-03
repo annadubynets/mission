@@ -289,7 +289,7 @@ a[data-toggle=collapse] {
     left: 12px !important;
     right: 12px !important;
     top: 94px !important;
-    inset: none !important;
+    min-width: 0;
   }
 }
 .navbar-toggler.toggle-button {
